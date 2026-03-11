@@ -7,11 +7,17 @@ This repository contains the official plugins for [Koodo Reader](https://github.
 ## Repository Structure
 
 ```
- code/          # Plugin source code (human-readable, unminified)
- plugins/       # Compiled plugin JSON files (consumed by Koodo Reader)
- utils/         # Utility scripts (e.g., SHA256 hash generation)
- index.js       # Entry point / helper runtime
- package.json   # Node.js project manifest
+├── code/
+│   ├── translation/   # Translation plugin source code
+│   ├── dictionary/    # Dictionary plugin source code
+│   └── voice/         # Voice (TTS) plugin source code
+├── plugins/
+│   ├── translation/   # Compiled translation plugin JSON files
+│   ├── dictionary/    # Compiled dictionary plugin JSON files
+│   └── voice/         # Compiled voice (TTS) plugin JSON files
+├── utils/             # Utility scripts (e.g., SHA256 hash generation)
+├── index.js           # Entry point / helper runtime
+└── package.json       # Node.js project manifest
 ```
 
 ## Plugin JSON Format

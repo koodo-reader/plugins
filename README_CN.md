@@ -7,11 +7,17 @@
 ## 仓库结构
 
 ```
-├── code/          # 插件源代码（可读的未压缩格式）
-├── plugins/       # 编译后的插件 JSON 文件（供 Koodo Reader 调用）
-├── utils/         # 工具脚本（如 SHA256 哈希生成）
-├── index.js       # 入口文件 / 辅助运行时
-└── package.json   # Node.js 项目配置文件
+├── code/
+│   ├── translation/   # 翻译插件源代码
+│   ├── dictionary/    # 词典插件源代码
+│   └── voice/         # 语音（TTS）插件源代码
+├── plugins/
+│   ├── translation/   # 编译后的翻译插件 JSON 文件
+│   ├── dictionary/    # 编译后的词典插件 JSON 文件
+│   └── voice/         # 编译后的语音（TTS）插件 JSON 文件
+├── utils/             # 工具脚本（如 SHA256 哈希生成）
+├── index.js           # 入口文件 / 辅助运行时
+└── package.json       # Node.js 项目配置文件
 ```
 
 ## 插件 JSON 格式
