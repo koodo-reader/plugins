@@ -1,0 +1,28 @@
+{
+  "identifier": "ollama-translate-plugin",
+  "type": "translation",
+  "displayName": "Ollama",
+  "icon": "translation",
+  "version": "1.0.0",
+  "autoValue": "",
+  "config": {
+    "url": "http://localhost:11434/api/generate",
+    "model": "llama3"
+  },
+  "langList": {
+    "Automatic": "Automatic",
+    "English": "English",
+    "Spanish": "Spanish",
+    "French": "French",
+    "German": "German",
+    "Italian": "Italian",
+    "Portuguese": "Portuguese",
+    "Dutch": "Dutch",
+    "Russian": "Russian",
+    "Chinese": "Chinese",
+    "Japanese": "Japanese",
+    "Korean": "Korean"
+  },
+  "scriptSHA256": "67ba8ba22c4afe22af9fdac8e5950578247318f109c1c04dc87514f5fabd96e6",
+  "script": "async function translate(t,e,n,a,r){if(\"\"===r.url)return\"Error happened\";let o,l=await a.post(r.url,{model:r.model||\"llama3\",prompt:`${t} \r\ntranslate the above sentence to ${\"en\"===n||\"Automatic\"===n?\"English\":n}, and only return the content translated. no explanation.`,stream:!1},{headers:{\"Content-Type\":\"application/json\"}});return(console.log(l),200===l.status)?l.data.response:\"Error happened\"}window.translate=translate;"
+}

@@ -1,0 +1,11 @@
+{
+  "identifier": "cedict-embed-dict-plugin",
+  "type": "dictionary",
+  "displayName": "CEDICT",
+  "icon": "dict",
+  "version": "1.0.0",
+  "config": {},
+  "langList": [{ "lang": "English", "code": "en", "nativeLang": "English" }],
+  "scriptSHA256": "a8fb986d5131dd56d1fe1d251734ef0af489cc87930e60b8a3d98d6c763af189",
+  "script": "async function getDictText(t,e,c,i,n,d){return`https://www.mdbg.net/chinese/dictionary?page=worddict&wdrst=0&wdqb=${encodeURIComponent(t)}`}window.getDictText=getDictText;"
+}

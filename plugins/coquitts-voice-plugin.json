@@ -1,0 +1,25 @@
+{
+  "identifier": "coquitts-voice-plugin",
+  "type": "voice",
+  "displayName": "Coqui TTS",
+  "icon": "speaker",
+  "version": "1.0.0",
+  "config": {},
+  "voiceList": [
+    {
+      "name": "xiaoxiao",
+      "gender": "female",
+      "locale": "zh-CN",
+      "displayName": "Xiaoxiao",
+      "plugin": "coquitts-voice-plugin",
+      "config": {
+        "url": "http://127.0.0.1:5002/api/tts",
+        "speaker_id": "",
+        "language_id": "",
+        "style_wav": ""
+      }
+    }
+  ],
+  "scriptSHA256": "564a537e1e2d29c3e07213b6201c668461322173a45a4d9812094f60768da8c2",
+  "script": "const getAudioPath=async(t,e,i,n)=>{let a=require(\"path\"),o=require(\"fs\"),r=new Date().getTime()+\".wav\";return o.existsSync(a.join(i,\"tts\"))||o.mkdirSync(a.join(i,\"tts\")),o.writeFileSync(a.join(i,\"tts\",r),await getTTSAudio(t,e,n)),a.join(i,\"tts\",r)},objectToQueryString=t=>{let e=[];for(let i in t)if(t.hasOwnProperty(i)){let n=t[i],a=encodeURIComponent(i),o=encodeURIComponent(n);e.push(`${a}=${o}`)}return e.join(\"&\")},getTTSAudio=async(t,e,i)=>{let n=i.url||\"http://127.0.0.1:5002/api/tts\",a=i.speaker_id||\"\",o=i.language_id||\"\",r=i.style_wav||\"\",s=require(\"axios\");return new Promise((e,i)=>{s.get(n+\"?\"+objectToQueryString({text:t,speaker_id:a,language_id:o,style_wav:r}),{responseType:\"arraybuffer\"}).then(t=>{console.log(t),e(t.data)}).catch(t=>{console.log(t),i(\"\")})})};global.getAudioPath=getAudioPath;"
+}

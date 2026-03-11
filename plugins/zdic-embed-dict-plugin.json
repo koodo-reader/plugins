@@ -1,0 +1,11 @@
+{
+  "identifier": "zdic-embed-dict-plugin",
+  "type": "dictionary",
+  "displayName": "漢典",
+  "icon": "dict",
+  "version": "1.0.0",
+  "config": {},
+  "langList": [{ "lang": "Chinese", "code": "hans", "nativeLang": "Chinese" }],
+  "scriptSHA256": "838751ed35a23a845979768de383c222640d89de6172c26d309fe0da515a10fb",
+  "script": "async function getDictText(t,e,c,n,i,g){return`https://www.zdic.net/hans/${encodeURIComponent(t)}`}window.getDictText=getDictText;"
+}

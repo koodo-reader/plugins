@@ -1,0 +1,12 @@
+{
+  "identifier": "dictionaryapi-dict-plugin",
+  "type": "dictionary",
+  "displayName": "Free Dictionary API",
+  "icon": "dictionaryapi",
+  "version": "1.0.0",
+  "url": "https://dictionaryapi.dev/",
+  "config": {},
+  "langList": [{ "lang": "English", "code": "en", "nativeLang": "English" }],
+  "scriptSHA256": "19d91deb1f513206828680eefce6c6559d419bff0cde6a9d2ccb9198d5e77da8",
+  "script": "async function getDictText(a,i,t,e,n,o){let s=await e.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${a}`),d=`<p class=\"dict-word-type\">[${n(\"Pronunciations\")}]</p></p>`+(s.data[0].phonetic?s.data[0].phonetic:\"\")+\"<br/>\"+s.data[0].phonetics.filter(a=>a.audio).map(a=>`<span class=\"audio-label\">${a.audio.includes(\"uk\")?\"UK\":\"US\"} </span><span class=\"audio-note\">${a.text?a.text:\"\"} </span><div class=\"audio-container\"><audio controls class=\"audio-player\" controlsList=\"nodownload noplaybackrate\"><source src=\"${a.audio}\" type=\"audio/mpeg\"></audio></div>`).join(\"\")+s.data[0].meanings.map(a=>`<p><p class=\"dict-word-type\">[${a.partOfSpeech}]</p><div>${a.definitions.map((a,i)=>`<span style=\"font-weight: bold\">${i+1}</span>. `+a.definition).join(\"</div><div>\")}</div></p>`).join(\"\")+`<p class=\"dict-learn-more\">${n(\"Learn more\")}</p>`;return window.learnMoreUrl=s.data[0].sourceUrls[0],d}window.getDictText=getDictText;"
+}

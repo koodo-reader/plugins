@@ -1,0 +1,29 @@
+{
+  "identifier": "chatttsui-voice-plugin",
+  "type": "voice",
+  "displayName": "ChatTTS UI",
+  "icon": "speaker",
+  "version": "1.0.0",
+  "config": {},
+  "voiceList": [
+    {
+      "name": "xiaoxiao",
+      "gender": "female",
+      "locale": "zh-CN",
+      "displayName": "Xiaoxiao",
+      "plugin": "chatttsui-voice-plugin",
+      "config": {
+        "url": "http://127.0.0.1:9966/tts",
+        "prompt": "",
+        "voice": "3333",
+        "temperature": 0.3,
+        "top_p": 0.7,
+        "top_k": 20,
+        "skip_refine": 0,
+        "custom_voice": 0
+      }
+    }
+  ],
+  "scriptSHA256": "a41e7c5998e8f734b6293cde75e5e8d767c76a4cb23689a1d853ad380cf0eeb9",
+  "script": "const getAudioPath=async(t,e,o,i)=>{let p=i.url||\"http://127.0.0.1:9966/tts\",a=i.prompt||\"\",r=i.voice||\"3333\",s=i.temperature||.3,c=i.top_p||.7,u=i.top_k||20,n=i.skip_refine||0,$=i.custom_voice||0,d=require(\"qs\"),m=require(\"axios\");return new Promise((e,o)=>{m.post(p,d.stringify({text:t,prompt:a,voice:r,temperature:s,top_p:c,top_k:u,skip_refine:n,custom_voice:$})).then(t=>{console.log(t),0==t.data.code?e(t.data.audio_files[0].filename):e(\"\")}).catch(t=>{console.log(t),o(\"\")})})};global.getAudioPath=getAudioPath;"
+}

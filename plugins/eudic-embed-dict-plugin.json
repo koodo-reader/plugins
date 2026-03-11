@@ -1,0 +1,13 @@
+{
+  "identifier": "eudic-embed-dict-plugin",
+  "type": "dictionary",
+  "displayName": "欧路词典",
+  "icon": "eudic",
+  "version": "1.0.0",
+  "config": {},
+  "langList": [
+    { "lang": "Chinese", "code": "zh-CN", "nativeLang": "简体中文" }
+  ],
+  "scriptSHA256": "3d892040c7ba0cc96390b1c0958cfa4e1e4f678d249e5b892967580c8d66e8a0",
+  "script": "async function getDictText(t,e,c,i,n,d){return`https://dict.eudic.net/dicts/en/${encodeURIComponent(t)}`}window.getDictText=getDictText;"
+}

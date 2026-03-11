@@ -1,0 +1,12 @@
+{
+  "identifier": "bing-embed-translate-plugin",
+  "type": "translation",
+  "displayName": "Bing",
+  "icon": "bing",
+  "version": "1.0.0",
+  "autoValue": "auto-detect",
+  "config": {},
+  "langList": {},
+  "scriptSHA256": "135ea6fbc2da3c586d83d72e699160287bfecb4bf33e6687b633ea37428f22f2",
+  "script": "async function translate(t,a,n,r,s){return`https:\/\/www.bing.com\/translator?from=${a}&to=${n}&text=${encodeURIComponent(t)}`}window.translate=translate;"
+}

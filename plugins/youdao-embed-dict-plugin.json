@@ -1,0 +1,16 @@
+{
+  "identifier": "youdao-embed-dict-plugin",
+  "type": "dictionary",
+  "displayName": "Youdao Dictionary",
+  "icon": "dict",
+  "version": "1.0.1",
+  "config": {},
+  "langList": [
+    { "lang": "English", "code": "en", "nativeLang": "English" },
+    { "lang": "Japanese", "code": "ja", "nativeLang": "Japanese" },
+    { "lang": "French", "code": "fr", "nativeLang": "French" },
+    { "lang": "Korean", "code": "ko", "nativeLang": "Korean" }
+  ],
+  "scriptSHA256": "689a0e44542b8f9e70674ea1333950822eb1af0e314d0b79f36bd2599f305ffb",
+  "script": "async function getDictText(t,e,c,i,n,o){return`https://dict.youdao.com/result?word=${encodeURIComponent(t)}&lang=${c}`}window.getDictText=getDictText;"
+}

@@ -1,0 +1,14 @@
+{
+  "identifier": "360-embed-translate-plugin",
+  "type": "translation",
+  "displayName": "360翻译",
+  "icon": "360",
+  "version": "1.0.0",
+  "autoValue": "auto",
+  "config": {},
+  "langList": {
+    "auto": "Automatic"
+  },
+  "scriptSHA256": "abe0dc33745cb8362a4069b1793302393ebcfc628db5f58321fe15f78602b705",
+  "script": "async function translate(t,a,n,s,r){return`https://fanyi.so.com/#${encodeURIComponent(t)}`}window.translate=translate;"
+}

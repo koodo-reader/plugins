@@ -1,0 +1,56 @@
+{
+  "identifier": "cambridge-embed-dict-plugin",
+  "type": "dictionary",
+  "displayName": "Cambridge Dictionary",
+  "icon": "dict",
+  "version": "1.0.0",
+  "config": {},
+  "langList": [
+    { "lang": "english", "code": "english", "nativeLang": "English" },
+    {
+      "lang": "chinese (simplified)",
+      "code": "chinese-simplified",
+      "nativeLang": "简体中文"
+    },
+    {
+      "lang": "chinese (traditional)",
+      "code": "chinese-traditional",
+      "nativeLang": "繁體中文"
+    },
+    { "lang": "dutch", "code": "dutch", "nativeLang": "Nederlands" },
+    { "lang": "french", "code": "french", "nativeLang": "Français" },
+    { "lang": "german", "code": "german", "nativeLang": "Deutsch" },
+    {
+      "lang": "indonesian",
+      "code": "indonesian",
+      "nativeLang": "Bahasa Indonesia"
+    },
+    { "lang": "italian", "code": "italian", "nativeLang": "Italiano" },
+    { "lang": "japanese", "code": "japanese", "nativeLang": "日本語" },
+    { "lang": "norwegian", "code": "norwegian", "nativeLang": "Norsk" },
+    { "lang": "polish", "code": "polish", "nativeLang": "Polski" },
+    { "lang": "portuguese", "code": "portuguese", "nativeLang": "Português" },
+    { "lang": "spanish", "code": "spanish", "nativeLang": "Español" },
+    { "lang": "swedish", "code": "swedish", "nativeLang": "Svenska" },
+    { "lang": "arabic", "code": "arabic", "nativeLang": "العربية" },
+    { "lang": "bengali", "code": "bengali", "nativeLang": "বাংলা" },
+    { "lang": "catalan", "code": "catalan", "nativeLang": "Català" },
+    { "lang": "czech", "code": "czech", "nativeLang": "Čeština" },
+    { "lang": "danish", "code": "danish", "nativeLang": "Dansk" },
+    { "lang": "gujarati", "code": "gujarati", "nativeLang": "ગુજરાતી" },
+    { "lang": "hindi", "code": "hindi", "nativeLang": "हिन्दी" },
+    { "lang": "korean", "code": "korean", "nativeLang": "한국어" },
+    { "lang": "malay", "code": "malay", "nativeLang": "Bahasa Melayu" },
+    { "lang": "marathi", "code": "marathi", "nativeLang": "मराठी" },
+    { "lang": "russian", "code": "russian", "nativeLang": "Русский" },
+    { "lang": "tamil", "code": "tamil", "nativeLang": "தமிழ்" },
+    { "lang": "telugu", "code": "telugu", "nativeLang": "తెలుగు" },
+    { "lang": "thai", "code": "thai", "nativeLang": "ไทย" },
+    { "lang": "turkish", "code": "turkish", "nativeLang": "Türkçe" },
+    { "lang": "ukrainian", "code": "ukrainian", "nativeLang": "Українська" },
+    { "lang": "urdu", "code": "urdu", "nativeLang": "اردو" },
+    { "lang": "vietnamese", "code": "vietnamese", "nativeLang": "Tiếng Việt" }
+  ],
+  "scriptSHA256": "705dc6ccfcacb141aa4bbb4e74b25a243cc620e8e55f4af0d266a86a788de4ef",
+  "script": "async function getDictText(t,e,i,c,n,g){return`https://dictionary.cambridge.org/dictionary/english${\"en\"===i?\"\":\"-\"+i}/${encodeURIComponent(t)}`}window.getDictText=getDictText;"
+}

@@ -1,0 +1,14 @@
+{
+  "identifier": "openrussian-embed-dict-plugin",
+  "type": "dictionary",
+  "displayName": "OpenRussian.org",
+  "icon": "dict",
+  "version": "1.0.0",
+  "config": {},
+  "langList": [
+    { "lang": "English", "code": "en", "nativeLang": "English" },
+    { "lang": "German", "code": "de", "nativeLang": "German" }
+  ],
+  "scriptSHA256": "0d852c5fbb622bb9c151486f81c34da8a5d02c566ab682d70c844c0f04367569",
+  "script": "async function getDictText(e,t,n,c,r,u){return`https://${n}.openrussian.org/ru/${encodeURIComponent(removeAccents(e))}`}function removeAccents(e){return e.normalize(\"NFD\").replace(/[\\u0300-\\u036f]/g,\"\")}window.getDictText=getDictText;"
+}

@@ -1,0 +1,3510 @@
+{
+  "identifier": "deprecated-edge-voice-plugin",
+  "type": "voice",
+  "displayName": "Edge Voice",
+  "icon": "bing",
+  "version": "1.0.0",
+  "config": {},
+  "voiceList": [
+    {
+      "name": "af-ZA-AdriNeural",
+      "gender": "Female",
+      "locale": "af-ZA",
+      "displayName": "Microsoft Adri Online (Natural) - Afrikaans (South Africa)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "af-ZA-AdriNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "af-ZA-WillemNeural",
+      "gender": "Male",
+      "locale": "af-ZA",
+      "displayName": "Microsoft Willem Online (Natural) - Afrikaans (South Africa)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "af-ZA-WillemNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "sq-AL-AnilaNeural",
+      "gender": "Female",
+      "locale": "sq-AL",
+      "displayName": "Microsoft Anila Online (Natural) - Albanian (Albania)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "sq-AL-AnilaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "sq-AL-IlirNeural",
+      "gender": "Male",
+      "locale": "sq-AL",
+      "displayName": "Microsoft Ilir Online (Natural) - Albanian (Albania)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "sq-AL-IlirNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "am-ET-AmehaNeural",
+      "gender": "Male",
+      "locale": "am-ET",
+      "displayName": "Microsoft Ameha Online (Natural) - Amharic (Ethiopia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "am-ET-AmehaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "am-ET-MekdesNeural",
+      "gender": "Female",
+      "locale": "am-ET",
+      "displayName": "Microsoft Mekdes Online (Natural) - Amharic (Ethiopia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "am-ET-MekdesNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-DZ-AminaNeural",
+      "gender": "Female",
+      "locale": "ar-DZ",
+      "displayName": "Microsoft Amina Online (Natural) - Arabic (Algeria)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-DZ-AminaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-DZ-IsmaelNeural",
+      "gender": "Male",
+      "locale": "ar-DZ",
+      "displayName": "Microsoft Ismael Online (Natural) - Arabic (Algeria)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-DZ-IsmaelNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-BH-AliNeural",
+      "gender": "Male",
+      "locale": "ar-BH",
+      "displayName": "Microsoft Ali Online (Natural) - Arabic (Bahrain)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-BH-AliNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-BH-LailaNeural",
+      "gender": "Female",
+      "locale": "ar-BH",
+      "displayName": "Microsoft Laila Online (Natural) - Arabic (Bahrain)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-BH-LailaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-EG-SalmaNeural",
+      "gender": "Female",
+      "locale": "ar-EG",
+      "displayName": "Microsoft Salma Online (Natural) - Arabic (Egypt)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-EG-SalmaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-EG-ShakirNeural",
+      "gender": "Male",
+      "locale": "ar-EG",
+      "displayName": "Microsoft Shakir Online (Natural) - Arabic (Egypt)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-EG-ShakirNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-IQ-BasselNeural",
+      "gender": "Male",
+      "locale": "ar-IQ",
+      "displayName": "Microsoft Bassel Online (Natural) - Arabic (Iraq)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-IQ-BasselNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-IQ-RanaNeural",
+      "gender": "Female",
+      "locale": "ar-IQ",
+      "displayName": "Microsoft Rana Online (Natural) - Arabic (Iraq)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-IQ-RanaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-JO-SanaNeural",
+      "gender": "Female",
+      "locale": "ar-JO",
+      "displayName": "Microsoft Sana Online (Natural) - Arabic (Jordan)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-JO-SanaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-JO-TaimNeural",
+      "gender": "Male",
+      "locale": "ar-JO",
+      "displayName": "Microsoft Taim Online (Natural) - Arabic (Jordan)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-JO-TaimNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-KW-FahedNeural",
+      "gender": "Male",
+      "locale": "ar-KW",
+      "displayName": "Microsoft Fahed Online (Natural) - Arabic (Kuwait)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-KW-FahedNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-KW-NouraNeural",
+      "gender": "Female",
+      "locale": "ar-KW",
+      "displayName": "Microsoft Noura Online (Natural) - Arabic (Kuwait)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-KW-NouraNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-LB-LaylaNeural",
+      "gender": "Female",
+      "locale": "ar-LB",
+      "displayName": "Microsoft Layla Online (Natural) - Arabic (Lebanon)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-LB-LaylaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-LB-RamiNeural",
+      "gender": "Male",
+      "locale": "ar-LB",
+      "displayName": "Microsoft Rami Online (Natural) - Arabic (Lebanon)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-LB-RamiNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-LY-ImanNeural",
+      "gender": "Female",
+      "locale": "ar-LY",
+      "displayName": "Microsoft Iman Online (Natural) - Arabic (Libya)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-LY-ImanNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-LY-OmarNeural",
+      "gender": "Male",
+      "locale": "ar-LY",
+      "displayName": "Microsoft Omar Online (Natural) - Arabic (Libya)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-LY-OmarNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-MA-JamalNeural",
+      "gender": "Male",
+      "locale": "ar-MA",
+      "displayName": "Microsoft Jamal Online (Natural) - Arabic (Morocco)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-MA-JamalNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-MA-MounaNeural",
+      "gender": "Female",
+      "locale": "ar-MA",
+      "displayName": "Microsoft Mouna Online (Natural) - Arabic (Morocco)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-MA-MounaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-OM-AbdullahNeural",
+      "gender": "Male",
+      "locale": "ar-OM",
+      "displayName": "Microsoft Abdullah Online (Natural) - Arabic (Oman)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-OM-AbdullahNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-OM-AyshaNeural",
+      "gender": "Female",
+      "locale": "ar-OM",
+      "displayName": "Microsoft Aysha Online (Natural) - Arabic (Oman)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-OM-AyshaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-QA-AmalNeural",
+      "gender": "Female",
+      "locale": "ar-QA",
+      "displayName": "Microsoft Amal Online (Natural) - Arabic (Qatar)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-QA-AmalNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-QA-MoazNeural",
+      "gender": "Male",
+      "locale": "ar-QA",
+      "displayName": "Microsoft Moaz Online (Natural) - Arabic (Qatar)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-QA-MoazNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-SA-HamedNeural",
+      "gender": "Male",
+      "locale": "ar-SA",
+      "displayName": "Microsoft Hamed Online (Natural) - Arabic (Saudi Arabia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-SA-HamedNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-SA-ZariyahNeural",
+      "gender": "Female",
+      "locale": "ar-SA",
+      "displayName": "Microsoft Zariyah Online (Natural) - Arabic (Saudi Arabia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-SA-ZariyahNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-SY-AmanyNeural",
+      "gender": "Female",
+      "locale": "ar-SY",
+      "displayName": "Microsoft Amany Online (Natural) - Arabic (Syria)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-SY-AmanyNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-SY-LaithNeural",
+      "gender": "Male",
+      "locale": "ar-SY",
+      "displayName": "Microsoft Laith Online (Natural) - Arabic (Syria)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-SY-LaithNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-TN-HediNeural",
+      "gender": "Male",
+      "locale": "ar-TN",
+      "displayName": "Microsoft Hedi Online (Natural) - Arabic (Tunisia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-TN-HediNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-TN-ReemNeural",
+      "gender": "Female",
+      "locale": "ar-TN",
+      "displayName": "Microsoft Reem Online (Natural) - Arabic (Tunisia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-TN-ReemNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-AE-FatimaNeural",
+      "gender": "Female",
+      "locale": "ar-AE",
+      "displayName": "Microsoft Fatima Online (Natural) - Arabic (United Arab Emirates)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-AE-FatimaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-AE-HamdanNeural",
+      "gender": "Male",
+      "locale": "ar-AE",
+      "displayName": "Microsoft Hamdan Online (Natural) - Arabic (United Arab Emirates)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-AE-HamdanNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-YE-MaryamNeural",
+      "gender": "Female",
+      "locale": "ar-YE",
+      "displayName": "Microsoft Maryam Online (Natural) - Arabic (Yemen)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-YE-MaryamNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ar-YE-SalehNeural",
+      "gender": "Male",
+      "locale": "ar-YE",
+      "displayName": "Microsoft Saleh Online (Natural) - Arabic (Yemen)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ar-YE-SalehNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "az-AZ-BabekNeural",
+      "gender": "Male",
+      "locale": "az-AZ",
+      "displayName": "Microsoft Babek Online (Natural) - Azerbaijani (Azerbaijan)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "az-AZ-BabekNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "az-AZ-BanuNeural",
+      "gender": "Female",
+      "locale": "az-AZ",
+      "displayName": "Microsoft Banu Online (Natural) - Azerbaijani (Azerbaijan)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "az-AZ-BanuNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "bn-BD-NabanitaNeural",
+      "gender": "Female",
+      "locale": "bn-BD",
+      "displayName": "Microsoft Nabanita Online (Natural) - Bangla (Bangladesh)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "bn-BD-NabanitaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "bn-BD-PradeepNeural",
+      "gender": "Male",
+      "locale": "bn-BD",
+      "displayName": "Microsoft Pradeep Online (Natural) - Bangla (Bangladesh)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "bn-BD-PradeepNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "bn-IN-BashkarNeural",
+      "gender": "Male",
+      "locale": "bn-IN",
+      "displayName": "Microsoft Bashkar Online (Natural) - Bangla (India)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "bn-IN-BashkarNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "bn-IN-TanishaaNeural",
+      "gender": "Female",
+      "locale": "bn-IN",
+      "displayName": "Microsoft Tanishaa Online (Natural) - Bengali (India)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "bn-IN-TanishaaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "bs-BA-GoranNeural",
+      "gender": "Male",
+      "locale": "bs-BA",
+      "displayName": "Microsoft Goran Online (Natural) - Bosnian (Bosnia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "bs-BA-GoranNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "bs-BA-VesnaNeural",
+      "gender": "Female",
+      "locale": "bs-BA",
+      "displayName": "Microsoft Vesna Online (Natural) - Bosnian (Bosnia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "bs-BA-VesnaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "bg-BG-BorislavNeural",
+      "gender": "Male",
+      "locale": "bg-BG",
+      "displayName": "Microsoft Borislav Online (Natural) - Bulgarian (Bulgaria)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "bg-BG-BorislavNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "bg-BG-KalinaNeural",
+      "gender": "Female",
+      "locale": "bg-BG",
+      "displayName": "Microsoft Kalina Online (Natural) - Bulgarian (Bulgaria)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "bg-BG-KalinaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "my-MM-NilarNeural",
+      "gender": "Female",
+      "locale": "my-MM",
+      "displayName": "Microsoft Nilar Online (Natural) - Burmese (Myanmar)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "my-MM-NilarNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "my-MM-ThihaNeural",
+      "gender": "Male",
+      "locale": "my-MM",
+      "displayName": "Microsoft Thiha Online (Natural) - Burmese (Myanmar)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "my-MM-ThihaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ca-ES-EnricNeural",
+      "gender": "Male",
+      "locale": "ca-ES",
+      "displayName": "Microsoft Enric Online (Natural) - Catalan (Spain)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ca-ES-EnricNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ca-ES-JoanaNeural",
+      "gender": "Female",
+      "locale": "ca-ES",
+      "displayName": "Microsoft Joana Online (Natural) - Catalan (Spain)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ca-ES-JoanaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "zh-HK-HiuGaaiNeural",
+      "gender": "Female",
+      "locale": "zh-HK",
+      "displayName": "Microsoft HiuGaai Online (Natural) - Chinese (Cantonese Traditional)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "zh-HK-HiuGaaiNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "zh-HK-HiuMaanNeural",
+      "gender": "Female",
+      "locale": "zh-HK",
+      "displayName": "Microsoft HiuMaan Online (Natural) - Chinese (Hong Kong)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "zh-HK-HiuMaanNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "zh-HK-WanLungNeural",
+      "gender": "Male",
+      "locale": "zh-HK",
+      "displayName": "Microsoft WanLung Online (Natural) - Chinese (Hong Kong)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "zh-HK-WanLungNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "zh-CN-XiaoxiaoNeural",
+      "gender": "Female",
+      "locale": "zh-CN",
+      "displayName": "Microsoft Xiaoxiao Online (Natural) - Chinese (Mainland)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "zh-CN-XiaoxiaoNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "zh-CN-XiaoyiNeural",
+      "gender": "Female",
+      "locale": "zh-CN",
+      "displayName": "Microsoft Xiaoyi Online (Natural) - Chinese (Mainland)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "zh-CN-XiaoyiNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "zh-CN-YunjianNeural",
+      "gender": "Male",
+      "locale": "zh-CN",
+      "displayName": "Microsoft Yunjian Online (Natural) - Chinese (Mainland)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "zh-CN-YunjianNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "zh-CN-YunxiNeural",
+      "gender": "Male",
+      "locale": "zh-CN",
+      "displayName": "Microsoft Yunxi Online (Natural) - Chinese (Mainland)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "zh-CN-YunxiNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "zh-CN-YunxiaNeural",
+      "gender": "Male",
+      "locale": "zh-CN",
+      "displayName": "Microsoft Yunxia Online (Natural) - Chinese (Mainland)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "zh-CN-YunxiaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "zh-CN-YunyangNeural",
+      "gender": "Male",
+      "locale": "zh-CN",
+      "displayName": "Microsoft Yunyang Online (Natural) - Chinese (Mainland)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "zh-CN-YunyangNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "zh-CN-liaoning-XiaobeiNeural",
+      "gender": "Female",
+      "locale": "zh-CN-liaoning",
+      "displayName": "Microsoft Xiaobei Online (Natural) - Chinese (Northeastern Mandarin)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "zh-CN-liaoning-XiaobeiNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "zh-TW-HsiaoChenNeural",
+      "gender": "Female",
+      "locale": "zh-TW",
+      "displayName": "Microsoft HsiaoChen Online (Natural) - Chinese (Taiwan)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "zh-TW-HsiaoChenNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "zh-TW-YunJheNeural",
+      "gender": "Male",
+      "locale": "zh-TW",
+      "displayName": "Microsoft YunJhe Online (Natural) - Chinese (Taiwan)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "zh-TW-YunJheNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "zh-TW-HsiaoYuNeural",
+      "gender": "Female",
+      "locale": "zh-TW",
+      "displayName": "Microsoft HsiaoYu Online (Natural) - Chinese (Taiwanese Mandarin)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "zh-TW-HsiaoYuNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "zh-CN-shaanxi-XiaoniNeural",
+      "gender": "Female",
+      "locale": "zh-CN-shaanxi",
+      "displayName": "Microsoft Xiaoni Online (Natural) - Chinese (Zhongyuan Mandarin Shaanxi)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "zh-CN-shaanxi-XiaoniNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "hr-HR-GabrijelaNeural",
+      "gender": "Female",
+      "locale": "hr-HR",
+      "displayName": "Microsoft Gabrijela Online (Natural) - Croatian (Croatia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "hr-HR-GabrijelaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "hr-HR-SreckoNeural",
+      "gender": "Male",
+      "locale": "hr-HR",
+      "displayName": "Microsoft Srecko Online (Natural) - Croatian (Croatia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "hr-HR-SreckoNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "cs-CZ-AntoninNeural",
+      "gender": "Male",
+      "locale": "cs-CZ",
+      "displayName": "Microsoft Antonin Online (Natural) - Czech (Czech)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "cs-CZ-AntoninNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "cs-CZ-VlastaNeural",
+      "gender": "Female",
+      "locale": "cs-CZ",
+      "displayName": "Microsoft Vlasta Online (Natural) - Czech (Czech)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "cs-CZ-VlastaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "da-DK-ChristelNeural",
+      "gender": "Female",
+      "locale": "da-DK",
+      "displayName": "Microsoft Christel Online (Natural) - Danish (Denmark)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "da-DK-ChristelNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "da-DK-JeppeNeural",
+      "gender": "Male",
+      "locale": "da-DK",
+      "displayName": "Microsoft Jeppe Online (Natural) - Danish (Denmark)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "da-DK-JeppeNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "nl-BE-ArnaudNeural",
+      "gender": "Male",
+      "locale": "nl-BE",
+      "displayName": "Microsoft Arnaud Online (Natural) - Dutch (Belgium)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "nl-BE-ArnaudNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "nl-BE-DenaNeural",
+      "gender": "Female",
+      "locale": "nl-BE",
+      "displayName": "Microsoft Dena Online (Natural) - Dutch (Belgium)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "nl-BE-DenaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "nl-NL-ColetteNeural",
+      "gender": "Female",
+      "locale": "nl-NL",
+      "displayName": "Microsoft Colette Online (Natural) - Dutch (Netherlands)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "nl-NL-ColetteNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "nl-NL-FennaNeural",
+      "gender": "Female",
+      "locale": "nl-NL",
+      "displayName": "Microsoft Fenna Online (Natural) - Dutch (Netherlands)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "nl-NL-FennaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "nl-NL-MaartenNeural",
+      "gender": "Male",
+      "locale": "nl-NL",
+      "displayName": "Microsoft Maarten Online (Natural) - Dutch (Netherlands)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "nl-NL-MaartenNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-AU-NatashaNeural",
+      "gender": "Female",
+      "locale": "en-AU",
+      "displayName": "Microsoft Natasha Online (Natural) - English (Australia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-AU-NatashaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-AU-WilliamNeural",
+      "gender": "Male",
+      "locale": "en-AU",
+      "displayName": "Microsoft William Online (Natural) - English (Australia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-AU-WilliamNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-CA-ClaraNeural",
+      "gender": "Female",
+      "locale": "en-CA",
+      "displayName": "Microsoft Clara Online (Natural) - English (Canada)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-CA-ClaraNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-CA-LiamNeural",
+      "gender": "Male",
+      "locale": "en-CA",
+      "displayName": "Microsoft Liam Online (Natural) - English (Canada)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-CA-LiamNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-HK-SamNeural",
+      "gender": "Male",
+      "locale": "en-HK",
+      "displayName": "Microsoft Sam Online (Natural) - English (Hongkong)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-HK-SamNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-HK-YanNeural",
+      "gender": "Female",
+      "locale": "en-HK",
+      "displayName": "Microsoft Yan Online (Natural) - English (Hongkong)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-HK-YanNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-IN-NeerjaExpressiveNeural",
+      "gender": "Female",
+      "locale": "en-IN",
+      "displayName": "Microsoft Neerja Online (Natural) - English (India) (Preview)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-IN-NeerjaExpressiveNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-IN-NeerjaNeural",
+      "gender": "Female",
+      "locale": "en-IN",
+      "displayName": "Microsoft Neerja Online (Natural) - English (India)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-IN-NeerjaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-IN-PrabhatNeural",
+      "gender": "Male",
+      "locale": "en-IN",
+      "displayName": "Microsoft Prabhat Online (Natural) - English (India)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-IN-PrabhatNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-IE-ConnorNeural",
+      "gender": "Male",
+      "locale": "en-IE",
+      "displayName": "Microsoft Connor Online (Natural) - English (Ireland)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-IE-ConnorNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-IE-EmilyNeural",
+      "gender": "Female",
+      "locale": "en-IE",
+      "displayName": "Microsoft Emily Online (Natural) - English (Ireland)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-IE-EmilyNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-KE-AsiliaNeural",
+      "gender": "Female",
+      "locale": "en-KE",
+      "displayName": "Microsoft Asilia Online (Natural) - English (Kenya)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-KE-AsiliaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-KE-ChilembaNeural",
+      "gender": "Male",
+      "locale": "en-KE",
+      "displayName": "Microsoft Chilemba Online (Natural) - English (Kenya)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-KE-ChilembaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-NZ-MitchellNeural",
+      "gender": "Male",
+      "locale": "en-NZ",
+      "displayName": "Microsoft Mitchell Online (Natural) - English (New Zealand)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-NZ-MitchellNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-NZ-MollyNeural",
+      "gender": "Female",
+      "locale": "en-NZ",
+      "displayName": "Microsoft Molly Online (Natural) - English (New Zealand)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-NZ-MollyNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-NG-AbeoNeural",
+      "gender": "Male",
+      "locale": "en-NG",
+      "displayName": "Microsoft Abeo Online (Natural) - English (Nigeria)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-NG-AbeoNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-NG-EzinneNeural",
+      "gender": "Female",
+      "locale": "en-NG",
+      "displayName": "Microsoft Ezinne Online (Natural) - English (Nigeria)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-NG-EzinneNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-PH-JamesNeural",
+      "gender": "Male",
+      "locale": "en-PH",
+      "displayName": "Microsoft James Online (Natural) - English (Philippines)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-PH-JamesNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-PH-RosaNeural",
+      "gender": "Female",
+      "locale": "en-PH",
+      "displayName": "Microsoft Rosa Online (Natural) - English (Philippines)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-PH-RosaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-SG-LunaNeural",
+      "gender": "Female",
+      "locale": "en-SG",
+      "displayName": "Microsoft Luna Online (Natural) - English (Singapore)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-SG-LunaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-SG-WayneNeural",
+      "gender": "Male",
+      "locale": "en-SG",
+      "displayName": "Microsoft Wayne Online (Natural) - English (Singapore)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-SG-WayneNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-ZA-LeahNeural",
+      "gender": "Female",
+      "locale": "en-ZA",
+      "displayName": "Microsoft Leah Online (Natural) - English (South Africa)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-ZA-LeahNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-ZA-LukeNeural",
+      "gender": "Male",
+      "locale": "en-ZA",
+      "displayName": "Microsoft Luke Online (Natural) - English (South Africa)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-ZA-LukeNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-TZ-ElimuNeural",
+      "gender": "Male",
+      "locale": "en-TZ",
+      "displayName": "Microsoft Elimu Online (Natural) - English (Tanzania)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-TZ-ElimuNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-TZ-ImaniNeural",
+      "gender": "Female",
+      "locale": "en-TZ",
+      "displayName": "Microsoft Imani Online (Natural) - English (Tanzania)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-TZ-ImaniNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-GB-LibbyNeural",
+      "gender": "Female",
+      "locale": "en-GB",
+      "displayName": "Microsoft Libby Online (Natural) - English (United Kingdom)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-GB-LibbyNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-GB-MaisieNeural",
+      "gender": "Female",
+      "locale": "en-GB",
+      "displayName": "Microsoft Maisie Online (Natural) - English (United Kingdom)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-GB-MaisieNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-GB-RyanNeural",
+      "gender": "Male",
+      "locale": "en-GB",
+      "displayName": "Microsoft Ryan Online (Natural) - English (United Kingdom)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-GB-RyanNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-GB-SoniaNeural",
+      "gender": "Female",
+      "locale": "en-GB",
+      "displayName": "Microsoft Sonia Online (Natural) - English (United Kingdom)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-GB-SoniaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-GB-ThomasNeural",
+      "gender": "Male",
+      "locale": "en-GB",
+      "displayName": "Microsoft Thomas Online (Natural) - English (United Kingdom)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-GB-ThomasNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-US-AvaMultilingualNeural",
+      "gender": "Female",
+      "locale": "en-US",
+      "displayName": "Microsoft AvaMultilingual Online (Natural) - English (United States)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-US-AvaMultilingualNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-US-AndrewMultilingualNeural",
+      "gender": "Male",
+      "locale": "en-US",
+      "displayName": "Microsoft AndrewMultilingual Online (Natural) - English (United States)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-US-AndrewMultilingualNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-US-EmmaMultilingualNeural",
+      "gender": "Female",
+      "locale": "en-US",
+      "displayName": "Microsoft EmmaMultilingual Online (Natural) - English (United States)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-US-EmmaMultilingualNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-US-BrianMultilingualNeural",
+      "gender": "Male",
+      "locale": "en-US",
+      "displayName": "Microsoft BrianMultilingual Online (Natural) - English (United States)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-US-BrianMultilingualNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-US-AvaNeural",
+      "gender": "Female",
+      "locale": "en-US",
+      "displayName": "Microsoft Ava Online (Natural) - English (United States)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-US-AvaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-US-AndrewNeural",
+      "gender": "Male",
+      "locale": "en-US",
+      "displayName": "Microsoft Andrew Online (Natural) - English (United States)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-US-AndrewNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-US-EmmaNeural",
+      "gender": "Female",
+      "locale": "en-US",
+      "displayName": "Microsoft Emma Online (Natural) - English (United States)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-US-EmmaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-US-BrianNeural",
+      "gender": "Male",
+      "locale": "en-US",
+      "displayName": "Microsoft Brian Online (Natural) - English (United States)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-US-BrianNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-US-AnaNeural",
+      "gender": "Female",
+      "locale": "en-US",
+      "displayName": "Microsoft Ana Online (Natural) - English (United States)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-US-AnaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-US-AriaNeural",
+      "gender": "Female",
+      "locale": "en-US",
+      "displayName": "Microsoft Aria Online (Natural) - English (United States)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-US-AriaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-US-ChristopherNeural",
+      "gender": "Male",
+      "locale": "en-US",
+      "displayName": "Microsoft Christopher Online (Natural) - English (United States)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-US-ChristopherNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-US-EricNeural",
+      "gender": "Male",
+      "locale": "en-US",
+      "displayName": "Microsoft Eric Online (Natural) - English (United States)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-US-EricNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-US-GuyNeural",
+      "gender": "Male",
+      "locale": "en-US",
+      "displayName": "Microsoft Guy Online (Natural) - English (United States)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-US-GuyNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-US-JennyNeural",
+      "gender": "Female",
+      "locale": "en-US",
+      "displayName": "Microsoft Jenny Online (Natural) - English (United States)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-US-JennyNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-US-MichelleNeural",
+      "gender": "Female",
+      "locale": "en-US",
+      "displayName": "Microsoft Michelle Online (Natural) - English (United States)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-US-MichelleNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-US-RogerNeural",
+      "gender": "Male",
+      "locale": "en-US",
+      "displayName": "Microsoft Roger Online (Natural) - English (United States)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-US-RogerNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "en-US-SteffanNeural",
+      "gender": "Male",
+      "locale": "en-US",
+      "displayName": "Microsoft Steffan Online (Natural) - English (United States)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "en-US-SteffanNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "et-EE-AnuNeural",
+      "gender": "Female",
+      "locale": "et-EE",
+      "displayName": "Microsoft Anu Online (Natural) - Estonian (Estonia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "et-EE-AnuNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "et-EE-KertNeural",
+      "gender": "Male",
+      "locale": "et-EE",
+      "displayName": "Microsoft Kert Online (Natural) - Estonian (Estonia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "et-EE-KertNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "fil-PH-AngeloNeural",
+      "gender": "Male",
+      "locale": "fil-PH",
+      "displayName": "Microsoft Angelo Online (Natural) - Filipino (Philippines)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "fil-PH-AngeloNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "fil-PH-BlessicaNeural",
+      "gender": "Female",
+      "locale": "fil-PH",
+      "displayName": "Microsoft Blessica Online (Natural) - Filipino (Philippines)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "fil-PH-BlessicaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "fi-FI-HarriNeural",
+      "gender": "Male",
+      "locale": "fi-FI",
+      "displayName": "Microsoft Harri Online (Natural) - Finnish (Finland)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "fi-FI-HarriNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "fi-FI-NooraNeural",
+      "gender": "Female",
+      "locale": "fi-FI",
+      "displayName": "Microsoft Noora Online (Natural) - Finnish (Finland)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "fi-FI-NooraNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "fr-BE-CharlineNeural",
+      "gender": "Female",
+      "locale": "fr-BE",
+      "displayName": "Microsoft Charline Online (Natural) - French (Belgium)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "fr-BE-CharlineNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "fr-BE-GerardNeural",
+      "gender": "Male",
+      "locale": "fr-BE",
+      "displayName": "Microsoft Gerard Online (Natural) - French (Belgium)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "fr-BE-GerardNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "fr-CA-ThierryNeural",
+      "gender": "Male",
+      "locale": "fr-CA",
+      "displayName": "Microsoft Thierry Online (Natural) - French (Canada)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "fr-CA-ThierryNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "fr-CA-AntoineNeural",
+      "gender": "Male",
+      "locale": "fr-CA",
+      "displayName": "Microsoft Antoine Online (Natural) - French (Canada)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "fr-CA-AntoineNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "fr-CA-JeanNeural",
+      "gender": "Male",
+      "locale": "fr-CA",
+      "displayName": "Microsoft Jean Online (Natural) - French (Canada)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "fr-CA-JeanNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "fr-CA-SylvieNeural",
+      "gender": "Female",
+      "locale": "fr-CA",
+      "displayName": "Microsoft Sylvie Online (Natural) - French (Canada)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "fr-CA-SylvieNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "fr-FR-VivienneMultilingualNeural",
+      "gender": "Female",
+      "locale": "fr-FR",
+      "displayName": "Microsoft VivienneMultilingual Online (Natural) - French (France)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "fr-FR-VivienneMultilingualNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "fr-FR-RemyMultilingualNeural",
+      "gender": "Male",
+      "locale": "fr-FR",
+      "displayName": "Microsoft RemyMultilingual Online (Natural) - French (France)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "fr-FR-RemyMultilingualNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "fr-FR-DeniseNeural",
+      "gender": "Female",
+      "locale": "fr-FR",
+      "displayName": "Microsoft Denise Online (Natural) - French (France)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "fr-FR-DeniseNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "fr-FR-EloiseNeural",
+      "gender": "Female",
+      "locale": "fr-FR",
+      "displayName": "Microsoft Eloise Online (Natural) - French (France)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "fr-FR-EloiseNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "fr-FR-HenriNeural",
+      "gender": "Male",
+      "locale": "fr-FR",
+      "displayName": "Microsoft Henri Online (Natural) - French (France)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "fr-FR-HenriNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "fr-CH-ArianeNeural",
+      "gender": "Female",
+      "locale": "fr-CH",
+      "displayName": "Microsoft Ariane Online (Natural) - French (Switzerland)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "fr-CH-ArianeNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "fr-CH-FabriceNeural",
+      "gender": "Male",
+      "locale": "fr-CH",
+      "displayName": "Microsoft Fabrice Online (Natural) - French (Switzerland)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "fr-CH-FabriceNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "gl-ES-RoiNeural",
+      "gender": "Male",
+      "locale": "gl-ES",
+      "displayName": "Microsoft Roi Online (Natural) - Galician (Spain)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "gl-ES-RoiNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "gl-ES-SabelaNeural",
+      "gender": "Female",
+      "locale": "gl-ES",
+      "displayName": "Microsoft Sabela Online (Natural) - Galician (Spain)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "gl-ES-SabelaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ka-GE-EkaNeural",
+      "gender": "Female",
+      "locale": "ka-GE",
+      "displayName": "Microsoft Eka Online (Natural) - Georgian (Georgia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ka-GE-EkaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ka-GE-GiorgiNeural",
+      "gender": "Male",
+      "locale": "ka-GE",
+      "displayName": "Microsoft Giorgi Online (Natural) - Georgian (Georgia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ka-GE-GiorgiNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "de-AT-IngridNeural",
+      "gender": "Female",
+      "locale": "de-AT",
+      "displayName": "Microsoft Ingrid Online (Natural) - German (Austria)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "de-AT-IngridNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "de-AT-JonasNeural",
+      "gender": "Male",
+      "locale": "de-AT",
+      "displayName": "Microsoft Jonas Online (Natural) - German (Austria)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "de-AT-JonasNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "de-DE-SeraphinaMultilingualNeural",
+      "gender": "Female",
+      "locale": "de-DE",
+      "displayName": "Microsoft SeraphinaMultilingual Online (Natural) - German (Germany)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "de-DE-SeraphinaMultilingualNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "de-DE-FlorianMultilingualNeural",
+      "gender": "Male",
+      "locale": "de-DE",
+      "displayName": "Microsoft FlorianMultilingual Online (Natural) - German (Germany)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "de-DE-FlorianMultilingualNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "de-DE-AmalaNeural",
+      "gender": "Female",
+      "locale": "de-DE",
+      "displayName": "Microsoft Amala Online (Natural) - German (Germany)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "de-DE-AmalaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "de-DE-ConradNeural",
+      "gender": "Male",
+      "locale": "de-DE",
+      "displayName": "Microsoft Conrad Online (Natural) - German (Germany)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "de-DE-ConradNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "de-DE-KatjaNeural",
+      "gender": "Female",
+      "locale": "de-DE",
+      "displayName": "Microsoft Katja Online (Natural) - German (Germany)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "de-DE-KatjaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "de-DE-KillianNeural",
+      "gender": "Male",
+      "locale": "de-DE",
+      "displayName": "Microsoft Killian Online (Natural) - German (Germany)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "de-DE-KillianNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "de-CH-JanNeural",
+      "gender": "Male",
+      "locale": "de-CH",
+      "displayName": "Microsoft Jan Online (Natural) - German (Switzerland)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "de-CH-JanNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "de-CH-LeniNeural",
+      "gender": "Female",
+      "locale": "de-CH",
+      "displayName": "Microsoft Leni Online (Natural) - German (Switzerland)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "de-CH-LeniNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "el-GR-AthinaNeural",
+      "gender": "Female",
+      "locale": "el-GR",
+      "displayName": "Microsoft Athina Online (Natural) - Greek (Greece)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "el-GR-AthinaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "el-GR-NestorasNeural",
+      "gender": "Male",
+      "locale": "el-GR",
+      "displayName": "Microsoft Nestoras Online (Natural) - Greek (Greece)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "el-GR-NestorasNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "gu-IN-DhwaniNeural",
+      "gender": "Female",
+      "locale": "gu-IN",
+      "displayName": "Microsoft Dhwani Online (Natural) - Gujarati (India)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "gu-IN-DhwaniNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "gu-IN-NiranjanNeural",
+      "gender": "Male",
+      "locale": "gu-IN",
+      "displayName": "Microsoft Niranjan Online (Natural) - Gujarati (India)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "gu-IN-NiranjanNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "he-IL-AvriNeural",
+      "gender": "Male",
+      "locale": "he-IL",
+      "displayName": "Microsoft Avri Online (Natural) - Hebrew (Israel)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "he-IL-AvriNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "he-IL-HilaNeural",
+      "gender": "Female",
+      "locale": "he-IL",
+      "displayName": "Microsoft Hila Online (Natural) - Hebrew (Israel)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "he-IL-HilaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "hi-IN-MadhurNeural",
+      "gender": "Male",
+      "locale": "hi-IN",
+      "displayName": "Microsoft Madhur Online (Natural) - Hindi (India)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "hi-IN-MadhurNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "hi-IN-SwaraNeural",
+      "gender": "Female",
+      "locale": "hi-IN",
+      "displayName": "Microsoft Swara Online (Natural) - Hindi (India)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "hi-IN-SwaraNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "hu-HU-NoemiNeural",
+      "gender": "Female",
+      "locale": "hu-HU",
+      "displayName": "Microsoft Noemi Online (Natural) - Hungarian (Hungary)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "hu-HU-NoemiNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "hu-HU-TamasNeural",
+      "gender": "Male",
+      "locale": "hu-HU",
+      "displayName": "Microsoft Tamas Online (Natural) - Hungarian (Hungary)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "hu-HU-TamasNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "is-IS-GudrunNeural",
+      "gender": "Female",
+      "locale": "is-IS",
+      "displayName": "Microsoft Gudrun Online (Natural) - Icelandic (Iceland)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "is-IS-GudrunNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "is-IS-GunnarNeural",
+      "gender": "Male",
+      "locale": "is-IS",
+      "displayName": "Microsoft Gunnar Online (Natural) - Icelandic (Iceland)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "is-IS-GunnarNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "id-ID-ArdiNeural",
+      "gender": "Male",
+      "locale": "id-ID",
+      "displayName": "Microsoft Ardi Online (Natural) - Indonesian (Indonesia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "id-ID-ArdiNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "id-ID-GadisNeural",
+      "gender": "Female",
+      "locale": "id-ID",
+      "displayName": "Microsoft Gadis Online (Natural) - Indonesian (Indonesia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "id-ID-GadisNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ga-IE-ColmNeural",
+      "gender": "Male",
+      "locale": "ga-IE",
+      "displayName": "Microsoft Colm Online (Natural) - Irish (Ireland)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ga-IE-ColmNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ga-IE-OrlaNeural",
+      "gender": "Female",
+      "locale": "ga-IE",
+      "displayName": "Microsoft Orla Online (Natural) - Irish (Ireland)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ga-IE-OrlaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "it-IT-GiuseppeNeural",
+      "gender": "Male",
+      "locale": "it-IT",
+      "displayName": "Microsoft Giuseppe Online (Natural) - Italian (Italy)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "it-IT-GiuseppeNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "it-IT-DiegoNeural",
+      "gender": "Male",
+      "locale": "it-IT",
+      "displayName": "Microsoft Diego Online (Natural) - Italian (Italy)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "it-IT-DiegoNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "it-IT-ElsaNeural",
+      "gender": "Female",
+      "locale": "it-IT",
+      "displayName": "Microsoft Elsa Online (Natural) - Italian (Italy)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "it-IT-ElsaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "it-IT-IsabellaNeural",
+      "gender": "Female",
+      "locale": "it-IT",
+      "displayName": "Microsoft Isabella Online (Natural) - Italian (Italy)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "it-IT-IsabellaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ja-JP-KeitaNeural",
+      "gender": "Male",
+      "locale": "ja-JP",
+      "displayName": "Microsoft Keita Online (Natural) - Japanese (Japan)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ja-JP-KeitaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ja-JP-NanamiNeural",
+      "gender": "Female",
+      "locale": "ja-JP",
+      "displayName": "Microsoft Nanami Online (Natural) - Japanese (Japan)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ja-JP-NanamiNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "jv-ID-DimasNeural",
+      "gender": "Male",
+      "locale": "jv-ID",
+      "displayName": "Microsoft Dimas Online (Natural) - Javanese (Indonesia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "jv-ID-DimasNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "jv-ID-SitiNeural",
+      "gender": "Female",
+      "locale": "jv-ID",
+      "displayName": "Microsoft Siti Online (Natural) - Javanese (Indonesia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "jv-ID-SitiNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "kn-IN-GaganNeural",
+      "gender": "Male",
+      "locale": "kn-IN",
+      "displayName": "Microsoft Gagan Online (Natural) - Kannada (India)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "kn-IN-GaganNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "kn-IN-SapnaNeural",
+      "gender": "Female",
+      "locale": "kn-IN",
+      "displayName": "Microsoft Sapna Online (Natural) - Kannada (India)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "kn-IN-SapnaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "kk-KZ-AigulNeural",
+      "gender": "Female",
+      "locale": "kk-KZ",
+      "displayName": "Microsoft Aigul Online (Natural) - Kazakh (Kazakhstan)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "kk-KZ-AigulNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "kk-KZ-DauletNeural",
+      "gender": "Male",
+      "locale": "kk-KZ",
+      "displayName": "Microsoft Daulet Online (Natural) - Kazakh (Kazakhstan)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "kk-KZ-DauletNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "km-KH-PisethNeural",
+      "gender": "Male",
+      "locale": "km-KH",
+      "displayName": "Microsoft Piseth Online (Natural) - Khmer (Cambodia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "km-KH-PisethNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "km-KH-SreymomNeural",
+      "gender": "Female",
+      "locale": "km-KH",
+      "displayName": "Microsoft Sreymom Online (Natural) - Khmer (Cambodia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "km-KH-SreymomNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ko-KR-HyunsuNeural",
+      "gender": "Male",
+      "locale": "ko-KR",
+      "displayName": "Microsoft Hyunsu Online (Natural) - Korean (Korea)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ko-KR-HyunsuNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ko-KR-InJoonNeural",
+      "gender": "Male",
+      "locale": "ko-KR",
+      "displayName": "Microsoft InJoon Online (Natural) - Korean (Korea)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ko-KR-InJoonNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ko-KR-SunHiNeural",
+      "gender": "Female",
+      "locale": "ko-KR",
+      "displayName": "Microsoft SunHi Online (Natural) - Korean (Korea)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ko-KR-SunHiNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "lo-LA-ChanthavongNeural",
+      "gender": "Male",
+      "locale": "lo-LA",
+      "displayName": "Microsoft Chanthavong Online (Natural) - Lao (Laos)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "lo-LA-ChanthavongNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "lo-LA-KeomanyNeural",
+      "gender": "Female",
+      "locale": "lo-LA",
+      "displayName": "Microsoft Keomany Online (Natural) - Lao (Laos)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "lo-LA-KeomanyNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "lv-LV-EveritaNeural",
+      "gender": "Female",
+      "locale": "lv-LV",
+      "displayName": "Microsoft Everita Online (Natural) - Latvian (Latvia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "lv-LV-EveritaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "lv-LV-NilsNeural",
+      "gender": "Male",
+      "locale": "lv-LV",
+      "displayName": "Microsoft Nils Online (Natural) - Latvian (Latvia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "lv-LV-NilsNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "lt-LT-LeonasNeural",
+      "gender": "Male",
+      "locale": "lt-LT",
+      "displayName": "Microsoft Leonas Online (Natural) - Lithuanian (Lithuania)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "lt-LT-LeonasNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "lt-LT-OnaNeural",
+      "gender": "Female",
+      "locale": "lt-LT",
+      "displayName": "Microsoft Ona Online (Natural) - Lithuanian (Lithuania)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "lt-LT-OnaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "mk-MK-AleksandarNeural",
+      "gender": "Male",
+      "locale": "mk-MK",
+      "displayName": "Microsoft Aleksandar Online (Natural) - Macedonian (Republic of North Macedonia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "mk-MK-AleksandarNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "mk-MK-MarijaNeural",
+      "gender": "Female",
+      "locale": "mk-MK",
+      "displayName": "Microsoft Marija Online (Natural) - Macedonian (Republic of North Macedonia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "mk-MK-MarijaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ms-MY-OsmanNeural",
+      "gender": "Male",
+      "locale": "ms-MY",
+      "displayName": "Microsoft Osman Online (Natural) - Malay (Malaysia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ms-MY-OsmanNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ms-MY-YasminNeural",
+      "gender": "Female",
+      "locale": "ms-MY",
+      "displayName": "Microsoft Yasmin Online (Natural) - Malay (Malaysia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ms-MY-YasminNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ml-IN-MidhunNeural",
+      "gender": "Male",
+      "locale": "ml-IN",
+      "displayName": "Microsoft Midhun Online (Natural) - Malayalam (India)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ml-IN-MidhunNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ml-IN-SobhanaNeural",
+      "gender": "Female",
+      "locale": "ml-IN",
+      "displayName": "Microsoft Sobhana Online (Natural) - Malayalam (India)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ml-IN-SobhanaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "mt-MT-GraceNeural",
+      "gender": "Female",
+      "locale": "mt-MT",
+      "displayName": "Microsoft Grace Online (Natural) - Maltese (Malta)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "mt-MT-GraceNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "mt-MT-JosephNeural",
+      "gender": "Male",
+      "locale": "mt-MT",
+      "displayName": "Microsoft Joseph Online (Natural) - Maltese (Malta)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "mt-MT-JosephNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "mr-IN-AarohiNeural",
+      "gender": "Female",
+      "locale": "mr-IN",
+      "displayName": "Microsoft Aarohi Online (Natural) - Marathi (India)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "mr-IN-AarohiNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "mr-IN-ManoharNeural",
+      "gender": "Male",
+      "locale": "mr-IN",
+      "displayName": "Microsoft Manohar Online (Natural) - Marathi (India)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "mr-IN-ManoharNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "mn-MN-BataaNeural",
+      "gender": "Male",
+      "locale": "mn-MN",
+      "displayName": "Microsoft Bataa Online (Natural) - Mongolian (Mongolia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "mn-MN-BataaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "mn-MN-YesuiNeural",
+      "gender": "Female",
+      "locale": "mn-MN",
+      "displayName": "Microsoft Yesui Online (Natural) - Mongolian (Mongolia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "mn-MN-YesuiNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ne-NP-HemkalaNeural",
+      "gender": "Female",
+      "locale": "ne-NP",
+      "displayName": "Microsoft Hemkala Online (Natural) - Nepali (Nepal)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ne-NP-HemkalaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ne-NP-SagarNeural",
+      "gender": "Male",
+      "locale": "ne-NP",
+      "displayName": "Microsoft Sagar Online (Natural) - Nepali (Nepal)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ne-NP-SagarNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "nb-NO-FinnNeural",
+      "gender": "Male",
+      "locale": "nb-NO",
+      "displayName": "Microsoft Finn Online (Natural) - Norwegian (Bokmål Norway)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "nb-NO-FinnNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "nb-NO-PernilleNeural",
+      "gender": "Female",
+      "locale": "nb-NO",
+      "displayName": "Microsoft Pernille Online (Natural) - Norwegian (Bokmål, Norway)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "nb-NO-PernilleNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ps-AF-GulNawazNeural",
+      "gender": "Male",
+      "locale": "ps-AF",
+      "displayName": "Microsoft GulNawaz Online (Natural) - Pashto (Afghanistan)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ps-AF-GulNawazNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ps-AF-LatifaNeural",
+      "gender": "Female",
+      "locale": "ps-AF",
+      "displayName": "Microsoft Latifa Online (Natural) - Pashto (Afghanistan)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ps-AF-LatifaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "fa-IR-DilaraNeural",
+      "gender": "Female",
+      "locale": "fa-IR",
+      "displayName": "Microsoft Dilara Online (Natural) - Persian (Iran)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "fa-IR-DilaraNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "fa-IR-FaridNeural",
+      "gender": "Male",
+      "locale": "fa-IR",
+      "displayName": "Microsoft Farid Online (Natural) - Persian (Iran)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "fa-IR-FaridNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "pl-PL-MarekNeural",
+      "gender": "Male",
+      "locale": "pl-PL",
+      "displayName": "Microsoft Marek Online (Natural) - Polish (Poland)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "pl-PL-MarekNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "pl-PL-ZofiaNeural",
+      "gender": "Female",
+      "locale": "pl-PL",
+      "displayName": "Microsoft Zofia Online (Natural) - Polish (Poland)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "pl-PL-ZofiaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "pt-BR-ThalitaNeural",
+      "gender": "Female",
+      "locale": "pt-BR",
+      "displayName": "Microsoft Thalita Online (Natural) - Portuguese (Brazil)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "pt-BR-ThalitaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "pt-BR-AntonioNeural",
+      "gender": "Male",
+      "locale": "pt-BR",
+      "displayName": "Microsoft Antonio Online (Natural) - Portuguese (Brazil)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "pt-BR-AntonioNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "pt-BR-FranciscaNeural",
+      "gender": "Female",
+      "locale": "pt-BR",
+      "displayName": "Microsoft Francisca Online (Natural) - Portuguese (Brazil)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "pt-BR-FranciscaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "pt-PT-DuarteNeural",
+      "gender": "Male",
+      "locale": "pt-PT",
+      "displayName": "Microsoft Duarte Online (Natural) - Portuguese (Portugal)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "pt-PT-DuarteNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "pt-PT-RaquelNeural",
+      "gender": "Female",
+      "locale": "pt-PT",
+      "displayName": "Microsoft Raquel Online (Natural) - Portuguese (Portugal)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "pt-PT-RaquelNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ro-RO-AlinaNeural",
+      "gender": "Female",
+      "locale": "ro-RO",
+      "displayName": "Microsoft Alina Online (Natural) - Romanian (Romania)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ro-RO-AlinaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ro-RO-EmilNeural",
+      "gender": "Male",
+      "locale": "ro-RO",
+      "displayName": "Microsoft Emil Online (Natural) - Romanian (Romania)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ro-RO-EmilNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ru-RU-DmitryNeural",
+      "gender": "Male",
+      "locale": "ru-RU",
+      "displayName": "Microsoft Dmitry Online (Natural) - Russian (Russia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ru-RU-DmitryNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ru-RU-SvetlanaNeural",
+      "gender": "Female",
+      "locale": "ru-RU",
+      "displayName": "Microsoft Svetlana Online (Natural) - Russian (Russia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ru-RU-SvetlanaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "sr-RS-NicholasNeural",
+      "gender": "Male",
+      "locale": "sr-RS",
+      "displayName": "Microsoft Nicholas Online (Natural) - Serbian (Serbia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "sr-RS-NicholasNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "sr-RS-SophieNeural",
+      "gender": "Female",
+      "locale": "sr-RS",
+      "displayName": "Microsoft Sophie Online (Natural) - Serbian (Serbia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "sr-RS-SophieNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "si-LK-SameeraNeural",
+      "gender": "Male",
+      "locale": "si-LK",
+      "displayName": "Microsoft Sameera Online (Natural) - Sinhala (Sri Lanka)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "si-LK-SameeraNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "si-LK-ThiliniNeural",
+      "gender": "Female",
+      "locale": "si-LK",
+      "displayName": "Microsoft Thilini Online (Natural) - Sinhala (Sri Lanka)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "si-LK-ThiliniNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "sk-SK-LukasNeural",
+      "gender": "Male",
+      "locale": "sk-SK",
+      "displayName": "Microsoft Lukas Online (Natural) - Slovak (Slovakia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "sk-SK-LukasNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "sk-SK-ViktoriaNeural",
+      "gender": "Female",
+      "locale": "sk-SK",
+      "displayName": "Microsoft Viktoria Online (Natural) - Slovak (Slovakia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "sk-SK-ViktoriaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "sl-SI-PetraNeural",
+      "gender": "Female",
+      "locale": "sl-SI",
+      "displayName": "Microsoft Petra Online (Natural) - Slovenian (Slovenia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "sl-SI-PetraNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "sl-SI-RokNeural",
+      "gender": "Male",
+      "locale": "sl-SI",
+      "displayName": "Microsoft Rok Online (Natural) - Slovenian (Slovenia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "sl-SI-RokNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "so-SO-MuuseNeural",
+      "gender": "Male",
+      "locale": "so-SO",
+      "displayName": "Microsoft Muuse Online (Natural) - Somali (Somalia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "so-SO-MuuseNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "so-SO-UbaxNeural",
+      "gender": "Female",
+      "locale": "so-SO",
+      "displayName": "Microsoft Ubax Online (Natural) - Somali (Somalia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "so-SO-UbaxNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-AR-ElenaNeural",
+      "gender": "Female",
+      "locale": "es-AR",
+      "displayName": "Microsoft Elena Online (Natural) - Spanish (Argentina)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-AR-ElenaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-AR-TomasNeural",
+      "gender": "Male",
+      "locale": "es-AR",
+      "displayName": "Microsoft Tomas Online (Natural) - Spanish (Argentina)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-AR-TomasNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-BO-MarceloNeural",
+      "gender": "Male",
+      "locale": "es-BO",
+      "displayName": "Microsoft Marcelo Online (Natural) - Spanish (Bolivia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-BO-MarceloNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-BO-SofiaNeural",
+      "gender": "Female",
+      "locale": "es-BO",
+      "displayName": "Microsoft Sofia Online (Natural) - Spanish (Bolivia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-BO-SofiaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-CL-CatalinaNeural",
+      "gender": "Female",
+      "locale": "es-CL",
+      "displayName": "Microsoft Catalina Online (Natural) - Spanish (Chile)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-CL-CatalinaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-CL-LorenzoNeural",
+      "gender": "Male",
+      "locale": "es-CL",
+      "displayName": "Microsoft Lorenzo Online (Natural) - Spanish (Chile)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-CL-LorenzoNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-ES-XimenaNeural",
+      "gender": "Female",
+      "locale": "es-ES",
+      "displayName": "Microsoft Ximena Online (Natural) - Spanish (Colombia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-ES-XimenaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-CO-GonzaloNeural",
+      "gender": "Male",
+      "locale": "es-CO",
+      "displayName": "Microsoft Gonzalo Online (Natural) - Spanish (Colombia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-CO-GonzaloNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-CO-SalomeNeural",
+      "gender": "Female",
+      "locale": "es-CO",
+      "displayName": "Microsoft Salome Online (Natural) - Spanish (Colombia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-CO-SalomeNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-CR-JuanNeural",
+      "gender": "Male",
+      "locale": "es-CR",
+      "displayName": "Microsoft Juan Online (Natural) - Spanish (Costa Rica)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-CR-JuanNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-CR-MariaNeural",
+      "gender": "Female",
+      "locale": "es-CR",
+      "displayName": "Microsoft Maria Online (Natural) - Spanish (Costa Rica)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-CR-MariaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-CU-BelkysNeural",
+      "gender": "Female",
+      "locale": "es-CU",
+      "displayName": "Microsoft Belkys Online (Natural) - Spanish (Cuba)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-CU-BelkysNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-CU-ManuelNeural",
+      "gender": "Male",
+      "locale": "es-CU",
+      "displayName": "Microsoft Manuel Online (Natural) - Spanish (Cuba)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-CU-ManuelNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-DO-EmilioNeural",
+      "gender": "Male",
+      "locale": "es-DO",
+      "displayName": "Microsoft Emilio Online (Natural) - Spanish (Dominican Republic)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-DO-EmilioNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-DO-RamonaNeural",
+      "gender": "Female",
+      "locale": "es-DO",
+      "displayName": "Microsoft Ramona Online (Natural) - Spanish (Dominican Republic)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-DO-RamonaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-EC-AndreaNeural",
+      "gender": "Female",
+      "locale": "es-EC",
+      "displayName": "Microsoft Andrea Online (Natural) - Spanish (Ecuador)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-EC-AndreaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-EC-LuisNeural",
+      "gender": "Male",
+      "locale": "es-EC",
+      "displayName": "Microsoft Luis Online (Natural) - Spanish (Ecuador)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-EC-LuisNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-SV-LorenaNeural",
+      "gender": "Female",
+      "locale": "es-SV",
+      "displayName": "Microsoft Lorena Online (Natural) - Spanish (El Salvador)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-SV-LorenaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-SV-RodrigoNeural",
+      "gender": "Male",
+      "locale": "es-SV",
+      "displayName": "Microsoft Rodrigo Online (Natural) - Spanish (El Salvador)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-SV-RodrigoNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-GQ-JavierNeural",
+      "gender": "Male",
+      "locale": "es-GQ",
+      "displayName": "Microsoft Javier Online (Natural) - Spanish (Equatorial Guinea)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-GQ-JavierNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-GQ-TeresaNeural",
+      "gender": "Female",
+      "locale": "es-GQ",
+      "displayName": "Microsoft Teresa Online (Natural) - Spanish (Equatorial Guinea)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-GQ-TeresaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-GT-AndresNeural",
+      "gender": "Male",
+      "locale": "es-GT",
+      "displayName": "Microsoft Andres Online (Natural) - Spanish (Guatemala)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-GT-AndresNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-GT-MartaNeural",
+      "gender": "Female",
+      "locale": "es-GT",
+      "displayName": "Microsoft Marta Online (Natural) - Spanish (Guatemala)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-GT-MartaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-HN-CarlosNeural",
+      "gender": "Male",
+      "locale": "es-HN",
+      "displayName": "Microsoft Carlos Online (Natural) - Spanish (Honduras)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-HN-CarlosNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-HN-KarlaNeural",
+      "gender": "Female",
+      "locale": "es-HN",
+      "displayName": "Microsoft Karla Online (Natural) - Spanish (Honduras)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-HN-KarlaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-MX-DaliaNeural",
+      "gender": "Female",
+      "locale": "es-MX",
+      "displayName": "Microsoft Dalia Online (Natural) - Spanish (Mexico)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-MX-DaliaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-MX-JorgeNeural",
+      "gender": "Male",
+      "locale": "es-MX",
+      "displayName": "Microsoft Jorge Online (Natural) - Spanish (Mexico)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-MX-JorgeNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-NI-FedericoNeural",
+      "gender": "Male",
+      "locale": "es-NI",
+      "displayName": "Microsoft Federico Online (Natural) - Spanish (Nicaragua)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-NI-FedericoNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-NI-YolandaNeural",
+      "gender": "Female",
+      "locale": "es-NI",
+      "displayName": "Microsoft Yolanda Online (Natural) - Spanish (Nicaragua)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-NI-YolandaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-PA-MargaritaNeural",
+      "gender": "Female",
+      "locale": "es-PA",
+      "displayName": "Microsoft Margarita Online (Natural) - Spanish (Panama)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-PA-MargaritaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-PA-RobertoNeural",
+      "gender": "Male",
+      "locale": "es-PA",
+      "displayName": "Microsoft Roberto Online (Natural) - Spanish (Panama)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-PA-RobertoNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-PY-MarioNeural",
+      "gender": "Male",
+      "locale": "es-PY",
+      "displayName": "Microsoft Mario Online (Natural) - Spanish (Paraguay)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-PY-MarioNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-PY-TaniaNeural",
+      "gender": "Female",
+      "locale": "es-PY",
+      "displayName": "Microsoft Tania Online (Natural) - Spanish (Paraguay)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-PY-TaniaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-PE-AlexNeural",
+      "gender": "Male",
+      "locale": "es-PE",
+      "displayName": "Microsoft Alex Online (Natural) - Spanish (Peru)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-PE-AlexNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-PE-CamilaNeural",
+      "gender": "Female",
+      "locale": "es-PE",
+      "displayName": "Microsoft Camila Online (Natural) - Spanish (Peru)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-PE-CamilaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-PR-KarinaNeural",
+      "gender": "Female",
+      "locale": "es-PR",
+      "displayName": "Microsoft Karina Online (Natural) - Spanish (Puerto Rico)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-PR-KarinaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-PR-VictorNeural",
+      "gender": "Male",
+      "locale": "es-PR",
+      "displayName": "Microsoft Victor Online (Natural) - Spanish (Puerto Rico)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-PR-VictorNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-ES-AlvaroNeural",
+      "gender": "Male",
+      "locale": "es-ES",
+      "displayName": "Microsoft Alvaro Online (Natural) - Spanish (Spain)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-ES-AlvaroNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-ES-ElviraNeural",
+      "gender": "Female",
+      "locale": "es-ES",
+      "displayName": "Microsoft Elvira Online (Natural) - Spanish (Spain)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-ES-ElviraNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-US-AlonsoNeural",
+      "gender": "Male",
+      "locale": "es-US",
+      "displayName": "Microsoft Alonso Online (Natural) - Spanish (United States)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-US-AlonsoNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-US-PalomaNeural",
+      "gender": "Female",
+      "locale": "es-US",
+      "displayName": "Microsoft Paloma Online (Natural) - Spanish (United States)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-US-PalomaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-UY-MateoNeural",
+      "gender": "Male",
+      "locale": "es-UY",
+      "displayName": "Microsoft Mateo Online (Natural) - Spanish (Uruguay)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-UY-MateoNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-UY-ValentinaNeural",
+      "gender": "Female",
+      "locale": "es-UY",
+      "displayName": "Microsoft Valentina Online (Natural) - Spanish (Uruguay)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-UY-ValentinaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-VE-PaolaNeural",
+      "gender": "Female",
+      "locale": "es-VE",
+      "displayName": "Microsoft Paola Online (Natural) - Spanish (Venezuela)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-VE-PaolaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "es-VE-SebastianNeural",
+      "gender": "Male",
+      "locale": "es-VE",
+      "displayName": "Microsoft Sebastian Online (Natural) - Spanish (Venezuela)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "es-VE-SebastianNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "su-ID-JajangNeural",
+      "gender": "Male",
+      "locale": "su-ID",
+      "displayName": "Microsoft Jajang Online (Natural) - Sundanese (Indonesia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "su-ID-JajangNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "su-ID-TutiNeural",
+      "gender": "Female",
+      "locale": "su-ID",
+      "displayName": "Microsoft Tuti Online (Natural) - Sundanese (Indonesia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "su-ID-TutiNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "sw-KE-RafikiNeural",
+      "gender": "Male",
+      "locale": "sw-KE",
+      "displayName": "Microsoft Rafiki Online (Natural) - Swahili (Kenya)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "sw-KE-RafikiNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "sw-KE-ZuriNeural",
+      "gender": "Female",
+      "locale": "sw-KE",
+      "displayName": "Microsoft Zuri Online (Natural) - Swahili (Kenya)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "sw-KE-ZuriNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "sw-TZ-DaudiNeural",
+      "gender": "Male",
+      "locale": "sw-TZ",
+      "displayName": "Microsoft Daudi Online (Natural) - Swahili (Tanzania)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "sw-TZ-DaudiNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "sw-TZ-RehemaNeural",
+      "gender": "Female",
+      "locale": "sw-TZ",
+      "displayName": "Microsoft Rehema Online (Natural) - Swahili (Tanzania)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "sw-TZ-RehemaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "sv-SE-MattiasNeural",
+      "gender": "Male",
+      "locale": "sv-SE",
+      "displayName": "Microsoft Mattias Online (Natural) - Swedish (Sweden)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "sv-SE-MattiasNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "sv-SE-SofieNeural",
+      "gender": "Female",
+      "locale": "sv-SE",
+      "displayName": "Microsoft Sofie Online (Natural) - Swedish (Sweden)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "sv-SE-SofieNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ta-IN-PallaviNeural",
+      "gender": "Female",
+      "locale": "ta-IN",
+      "displayName": "Microsoft Pallavi Online (Natural) - Tamil (India)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ta-IN-PallaviNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ta-IN-ValluvarNeural",
+      "gender": "Male",
+      "locale": "ta-IN",
+      "displayName": "Microsoft Valluvar Online (Natural) - Tamil (India)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ta-IN-ValluvarNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ta-MY-KaniNeural",
+      "gender": "Female",
+      "locale": "ta-MY",
+      "displayName": "Microsoft Kani Online (Natural) - Tamil (Malaysia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ta-MY-KaniNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ta-MY-SuryaNeural",
+      "gender": "Male",
+      "locale": "ta-MY",
+      "displayName": "Microsoft Surya Online (Natural) - Tamil (Malaysia)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ta-MY-SuryaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ta-SG-AnbuNeural",
+      "gender": "Male",
+      "locale": "ta-SG",
+      "displayName": "Microsoft Anbu Online (Natural) - Tamil (Singapore)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ta-SG-AnbuNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ta-SG-VenbaNeural",
+      "gender": "Female",
+      "locale": "ta-SG",
+      "displayName": "Microsoft Venba Online (Natural) - Tamil (Singapore)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ta-SG-VenbaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ta-LK-KumarNeural",
+      "gender": "Male",
+      "locale": "ta-LK",
+      "displayName": "Microsoft Kumar Online (Natural) - Tamil (Sri Lanka)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ta-LK-KumarNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ta-LK-SaranyaNeural",
+      "gender": "Female",
+      "locale": "ta-LK",
+      "displayName": "Microsoft Saranya Online (Natural) - Tamil (Sri Lanka)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ta-LK-SaranyaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "te-IN-MohanNeural",
+      "gender": "Male",
+      "locale": "te-IN",
+      "displayName": "Microsoft Mohan Online (Natural) - Telugu (India)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "te-IN-MohanNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "te-IN-ShrutiNeural",
+      "gender": "Female",
+      "locale": "te-IN",
+      "displayName": "Microsoft Shruti Online (Natural) - Telugu (India)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "te-IN-ShrutiNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "th-TH-NiwatNeural",
+      "gender": "Male",
+      "locale": "th-TH",
+      "displayName": "Microsoft Niwat Online (Natural) - Thai (Thailand)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "th-TH-NiwatNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "th-TH-PremwadeeNeural",
+      "gender": "Female",
+      "locale": "th-TH",
+      "displayName": "Microsoft Premwadee Online (Natural) - Thai (Thailand)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "th-TH-PremwadeeNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "tr-TR-AhmetNeural",
+      "gender": "Male",
+      "locale": "tr-TR",
+      "displayName": "Microsoft Ahmet Online (Natural) - Turkish (Turkey)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "tr-TR-AhmetNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "tr-TR-EmelNeural",
+      "gender": "Female",
+      "locale": "tr-TR",
+      "displayName": "Microsoft Emel Online (Natural) - Turkish (Turkey)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "tr-TR-EmelNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "uk-UA-OstapNeural",
+      "gender": "Male",
+      "locale": "uk-UA",
+      "displayName": "Microsoft Ostap Online (Natural) - Ukrainian (Ukraine)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "uk-UA-OstapNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "uk-UA-PolinaNeural",
+      "gender": "Female",
+      "locale": "uk-UA",
+      "displayName": "Microsoft Polina Online (Natural) - Ukrainian (Ukraine)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "uk-UA-PolinaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ur-IN-GulNeural",
+      "gender": "Female",
+      "locale": "ur-IN",
+      "displayName": "Microsoft Gul Online (Natural) - Urdu (India)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ur-IN-GulNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ur-IN-SalmanNeural",
+      "gender": "Male",
+      "locale": "ur-IN",
+      "displayName": "Microsoft Salman Online (Natural) - Urdu (India)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ur-IN-SalmanNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ur-PK-AsadNeural",
+      "gender": "Male",
+      "locale": "ur-PK",
+      "displayName": "Microsoft Asad Online (Natural) - Urdu (Pakistan)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ur-PK-AsadNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "ur-PK-UzmaNeural",
+      "gender": "Female",
+      "locale": "ur-PK",
+      "displayName": "Microsoft Uzma Online (Natural) - Urdu (Pakistan)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "ur-PK-UzmaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "uz-UZ-MadinaNeural",
+      "gender": "Female",
+      "locale": "uz-UZ",
+      "displayName": "Microsoft Madina Online (Natural) - Uzbek (Uzbekistan)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "uz-UZ-MadinaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "uz-UZ-SardorNeural",
+      "gender": "Male",
+      "locale": "uz-UZ",
+      "displayName": "Microsoft Sardor Online (Natural) - Uzbek (Uzbekistan)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "uz-UZ-SardorNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "vi-VN-HoaiMyNeural",
+      "gender": "Female",
+      "locale": "vi-VN",
+      "displayName": "Microsoft HoaiMy Online (Natural) - Vietnamese (Vietnam)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "vi-VN-HoaiMyNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "vi-VN-NamMinhNeural",
+      "gender": "Male",
+      "locale": "vi-VN",
+      "displayName": "Microsoft NamMinh Online (Natural) - Vietnamese (Vietnam)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "vi-VN-NamMinhNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "cy-GB-AledNeural",
+      "gender": "Male",
+      "locale": "cy-GB",
+      "displayName": "Microsoft Aled Online (Natural) - Welsh (United Kingdom)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "cy-GB-AledNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "cy-GB-NiaNeural",
+      "gender": "Female",
+      "locale": "cy-GB",
+      "displayName": "Microsoft Nia Online (Natural) - Welsh (United Kingdom)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "cy-GB-NiaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "zu-ZA-ThandoNeural",
+      "gender": "Female",
+      "locale": "zu-ZA",
+      "displayName": "Microsoft Thando Online (Natural) - Zulu (South Africa)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "zu-ZA-ThandoNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    },
+    {
+      "name": "zu-ZA-ThembaNeural",
+      "gender": "Male",
+      "locale": "zu-ZA",
+      "displayName": "Microsoft Themba Online (Natural) - Zulu (South Africa)",
+      "plugin": "deprecated-edge-voice-plugin",
+      "config": {
+        "voiceName": "zu-ZA-ThembaNeural",
+        "voiceFormat": "webm-24khz-16bit-mono-opus"
+      }
+    }
+  ],
+  "scriptSHA256": "c4a94fdb6079de47f2361517ad5bad3fc195689ca543c54f8638c84f22d46a5c",
+  "script": "const{randomBytes:e}=require(\"crypto\"),{WebSocket:t}=require(\"ws\");class Service{ws=null;executorMap;bufferMap;timer=null;constructor(){this.executorMap=new Map,this.bufferMap=new Map}async connect(){let i=e(16).toString(\"hex\").toLowerCase(),o=`wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&ConnectionId=${i}`;console.log(o);let s=new t(o,{host:\"speech.platform.bing.com\",origin:\"chrome-extension://jdiccldimpdaibmpdkjnbmckianbfold\",headers:{\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.66 Safari/537.36 Edg/103.0.1264.44\"}});return console.log(s),new Promise((e,t)=>{s.on(\"open\",()=>{e(s)}),s.on(\"close\",(e,t)=>{for(let[i,o]of(this.ws=null,this.timer&&(clearTimeout(this.timer),this.timer=null),this.executorMap))o.reject(`\u8FDE\u63A5\u5DF2\u5173\u95ED: ${t} ${e}`);this.executorMap.clear(),this.bufferMap.clear(),console.info(`\u8FDE\u63A5\u5DF2\u5173\u95ED\uFF1A ${t} ${e}`)}),s.on(\"message\",(e,t)=>{let i=/X-RequestId:(?<id>[a-z|0-9]*)/;if(t){if(t){let o=\"Path:audio\\r\\n\",s=e,r=s.indexOf(o)+o.length,n=s.slice(2,r).toString(),a=n.match(i).groups.id,l=s.slice(r);console.debug(`\u6536\u5230\u97F3\u9891\u7247\u6BB5\uFF1A${a} Length: ${l.length}\r\n${n}`);let c=this.bufferMap.get(a);c?(c=Buffer.concat([c,l]),this.bufferMap.set(a,c)):console.debug(`\u8BF7\u6C42\u5DF2\u88AB\u4E22\u5F03\uFF1A${a}`)}}else{console.debug(\"\u6536\u5230\u6587\u672C\u6D88\u606F\uFF1A%s\",e);let u=e.toString();if(u.includes(\"Path:turn.start\")){let h=u.match(i).groups.id;console.debug(`\u5F00\u59CB\u4F20\u8F93\uFF1A${h}\u2026\u2026`),this.bufferMap.set(h,Buffer.from([]))}else if(u.includes(\"Path:turn.end\")){let d=u.match(i),g=d.groups.id,p=this.executorMap.get(g);if(p){this.executorMap.delete(d.groups.id);let m=this.bufferMap.get(g);p.resolve(m),console.debug(`\u4F20\u8F93\u5B8C\u6210\uFF1A${g}\u2026\u2026`)}else console.debug(`\u8BF7\u6C42\u5DF2\u88AB\u4E22\u5F03\uFF1A${g}`)}}}),s.on(\"error\",e=>{console.error(`\u8FDE\u63A5\u5931\u8D25\uFF1A ${e}`),t(`\u8FDE\u63A5\u5931\u8D25\uFF1A ${e}`)}),s.on(\"ping\",e=>{console.debug(\"ping %s\",e)}),s.on(\"pong\",e=>{console.debug(\"pong %s\",e)})})}async convert(i,o){if(null==this.ws||this.ws.readyState!=t.OPEN){console.info(\"\u51C6\u5907\u8FDE\u63A5\u670D\u52A1\u5668\u2026\u2026\");let s=await this.connect();this.ws=s,console.info(\"\u8FDE\u63A5\u6210\u529F\uFF01\")}let r=e(16).toString(\"hex\").toLowerCase(),n=new Promise((e,t)=>{this.executorMap.set(r,{resolve:e,reject:t});let s=`X-Timestamp:${Date()}\\r\r\nContent-Type:application/json; charset=utf-8\\r\r\nPath:speech.config\\r\r\n\\r\r\n`+JSON.stringify({context:{synthesis:{audio:{metadataoptions:{sentenceBoundaryEnabled:\"false\",wordBoundaryEnabled:\"false\"},outputFormat:o}}}});console.info(`\u5F00\u59CB\u8F6C\u6362\uFF1A${r}\u2026\u2026`),console.debug(`\u51C6\u5907\u53D1\u9001\u914D\u7F6E\u8BF7\u6C42\uFF1A${r}\r\n`,s),this.ws.send(s,e=>{e&&console.error(`\u914D\u7F6E\u8BF7\u6C42\u53D1\u9001\u5931\u8D25\uFF1A${r}\r\n`,e);let t=`X-Timestamp:${Date()}\\r\r\nX-RequestId:${r}\\r\r\nContent-Type:application/ssml+xml\\r\r\nPath:ssml\\r\r\n\\r\r\n`+i;console.debug(`\u51C6\u5907\u53D1\u9001SSML\u6D88\u606F\uFF1A${r}\r\n`,t),this.ws.send(t,e=>{e&&console.error(`SSML\u6D88\u606F\u53D1\u9001\u5931\u8D25\uFF1A${r}\r\n`,e)})})});this.timer&&(console.debug(\"\u6536\u5230\u65B0\u7684\u8BF7\u6C42\uFF0C\u6E05\u9664\u8D85\u65F6\u5B9A\u65F6\u5668\"),clearTimeout(this.timer)),console.debug(\"\u521B\u5EFA\u65B0\u7684\u8D85\u65F6\u5B9A\u65F6\u5668\"),this.timer=setTimeout(()=>{this.ws&&this.ws.readyState==t.OPEN&&(console.debug(\"\u5DF2\u7ECF 10 \u79D2\u6CA1\u6709\u8BF7\u6C42\uFF0C\u4E3B\u52A8\u5173\u95ED\u8FDE\u63A5\"),this.ws.close(1e3),this.timer=null)},1e4);let a=await Promise.race([n,new Promise((e,t)=>{setTimeout(()=>{this.executorMap.delete(r),this.bufferMap.delete(r),t(\"\u8F6C\u6362\u8D85\u65F6\")},1e4)}),]);return console.info(`\u8F6C\u6362\u5B8C\u6210\uFF1A${r}`),console.info(`\u5269\u4F59 ${this.executorMap.size} \u4E2A\u4EFB\u52A1`),a}}const service=new Service,retry=async function(e,t,i,o){let s={message:o??\"\u591A\u6B21\u5C1D\u8BD5\u540E\u5931\u8D25\",errors:[]};for(let r=0;r<t;r++)try{return await e()}catch(n){i&&i(r,n),s.errors.push(n)}throw s},ra=async e=>{console.debug(`\u8BF7\u6C42\u6B63\u6587\uFF1A${e}`);try{let t=\"webm-24khz-16bit-mono-opus\";if(Array.isArray(t)||!FORMAT_CONTENT_TYPE.has(t))throw`\u65E0\u6548\u7684\u97F3\u9891\u683C\u5F0F\uFF1A${t}`;let i=e;if(null==i)throw`\u8F6C\u6362\u53C2\u6570\u65E0\u6548`;return await retry(async()=>await service.convert(i,t),3,(e,t)=>{console.warn(`\u7B2C${e}\u6B21\u8F6C\u6362\u5931\u8D25\uFF1A${t}`)},\"\u670D\u52A1\u5668\u591A\u6B21\u5C1D\u8BD5\u540E\u8F6C\u6362\u5931\u8D25\")}catch(o){console.error(`\u53D1\u751F\u9519\u8BEF, ${o.message}`)}},FORMAT_CONTENT_TYPE=new Map([[\"audio-24khz-48kbitrate-mono-mp3\",\"audio/mpeg\"],[\"webm-16khz-16bit-mono-opus\",\"audio/webm\"],[\"webm-24khz-16bit-mono-opus\",\"audio/webm\"],]),FORMAT_SUFFIX=new Map([[\"audio/x-wav\",\"wav\"],[\"audio/mpeg\",\"webm\"],[\"audio/webm\",\"webm\"],[\"audio/ogg\",\"ogg\"],]),getAudioPath=async(e,t,i,o)=>{let s=require(\"path\"),r=require(\"fs\"),n=new Date().getTime()+\".\"+(FORMAT_CONTENT_TYPE.get(o.voiceFormat)?FORMAT_SUFFIX.get(FORMAT_CONTENT_TYPE.get(o.voiceFormat)||\"audio/webm\"):\"webm\");return r.existsSync(s.join(i,\"tts\"))?(r.writeFileSync(s.join(i,\"tts\",n),await getEdgeAudio(e,t,o)),console.log(\"\u6587\u4EF6\u5939\u5DF2\u5B58\u5728\")):(r.mkdirSync(s.join(i,\"tts\")),r.writeFileSync(s.join(i,\"tts\",n),await getEdgeAudio(e,t,o)),console.log(\"\u6587\u4EF6\u5939\u521B\u5EFA\u6210\u529F\")),s.join(i,\"tts\",n)},getEdgeAudio=async(e,t,i)=>{let o=createSSML(e,i.voiceName||\"zh-CN-XiaoxiaoNeural\",t);return new Promise((e,t)=>{e(ra(o))})},createSSML=(e,t,i)=>'    <speak xmlns=\"http://www.w3.org/2001/10/synthesis\" xmlns:mstts=\"http://www.w3.org/2001/mstts\" xmlns:emo=\"http://www.w3.org/2009/10/emotionml\" version=\"1.0\" xml:lang=\"en-US\">        <voice name=\"'+t+'\">            <prosody rate=\"'+i+'%\" pitch=\"0%\">                '+(e=e.replaceAll(\"&\",\"&amp;\").replaceAll(\"<\",\"&lt;\").replaceAll(\">\",\"&gt;\").replaceAll(\"'\",\"&apos;\").replaceAll('\"',\"&quot;\"))+\"            </prosody>        </voice>    </speak>\";global.getAudioPath=getAudioPath;"
+}

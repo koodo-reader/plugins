@@ -1,0 +1,28 @@
+{
+  "identifier": "gptsovits-voice-plugin",
+  "type": "voice",
+  "displayName": "GPT-Sovits",
+  "icon": "speaker",
+  "version": "1.0.0",
+  "config": {},
+  "voiceList": [
+    {
+      "name": "xiaoxiao",
+      "gender": "female",
+      "locale": "zh-CN",
+      "displayName": "Xiaoxiao",
+      "plugin": "gptsovits-voice-plugin",
+      "config": {
+        "url": "http://127.0.0.1:9880",
+        "refer_wav_path": "123.wav",
+        "prompt_text": "一二三。",
+        "prompt_language": "zh",
+        "text_language": "zh",
+        "cut_punc": "，。",
+        "voiceFormat": "wav"
+      }
+    }
+  ],
+  "scriptSHA256": "b9a14fbd91991099a03321156d85551d54ef159db1f7def9dd210a37a498f57b",
+  "script": "const getAudioPath=async(t,e,a,o)=>{let i=require(\"path\"),n=require(\"fs\"),r=new Date().getTime()+\".\"+o.voiceFormat;return n.existsSync(i.join(a,\"tts\"))?(n.writeFileSync(i.join(a,\"tts\",r),await getTTSAudio(t,e,o)),console.log(\"\u6587\u4EF6\u5939\u5DF2\u5B58\u5728\")):(n.mkdirSync(i.join(a,\"tts\")),n.writeFileSync(i.join(a,\"tts\",r),await getTTSAudio(t,e,o)),console.log(\"\u6587\u4EF6\u5939\u521B\u5EFA\u6210\u529F\")),i.join(a,\"tts\",r)},getTTSAudio=async(t,e,a)=>{let o=a.url||\"http://127.0.0.1:9880\",i=a.text_language||\"zh\",n=a.prompt_language||\"zh\",r=a.refer_wav_path||\"\",g=a.prompt_text||\"zh\",s=a.cut_punc||\"\uFF0C\u3002\",u=require(\"axios\");return new Promise((e,a)=>{u.post(o,{refer_wav_path:r,prompt_text:g,prompt_language:n,text:t,text_language:i,cut_punc:s},{responseType:\"arraybuffer\"}).then(t=>{console.log(t),e(t.data)}).catch(t=>{console.log(t),a(\"\")})})};global.getAudioPath=getAudioPath;"
+}

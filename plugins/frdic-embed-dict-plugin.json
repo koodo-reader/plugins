@@ -1,0 +1,13 @@
+{
+  "identifier": "frdic-embed-dict-plugin",
+  "type": "dictionary",
+  "displayName": "法语助手",
+  "icon": "frdic",
+  "version": "1.0.0",
+  "config": {},
+  "langList": [
+    { "lang": "Chinese", "code": "zh-CN", "nativeLang": "简体中文" }
+  ],
+  "scriptSHA256": "81ceba2c3b30dece73834bd99b7459418f06e85dcba67ef76451a33992cd3618",
+  "script": "async function getDictText(t,c,e,i,n,r){return`https://www.frdic.com/dicts/fr/${encodeURIComponent(t)}`}window.getDictText=getDictText;"
+}

@@ -1,0 +1,11 @@
+{
+  "identifier": "hanyuguoxue-embed-dict-plugin",
+  "type": "dictionary",
+  "displayName": "汉语国学",
+  "icon": "dict",
+  "version": "1.0.1",
+  "config": {},
+  "langList": [{ "lang": "Chinese", "code": "zh", "nativeLang": "简体中文" }],
+  "scriptSHA256": "93c899af31362a599bae0cb1b9ad4a2dd495d7756cc9e88560d39a36f7f6dcfe",
+  "script": "async function getDictText(t,e,c,i,n,a){return`https://www.hanyuguoxue.com/zidian/search?words=${encodeURIComponent(t)}&type=all`}window.getDictText=getDictText;"
+}

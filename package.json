@@ -1,0 +1,20 @@
+{
+  "name": "koodo-reader-assets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "AGPL v3",
+  "dependencies": {
+    "adm-zip": "^0.5.14",
+    "axios": "^1.7.2",
+    "crypto": "^1.0.1",
+    "qs": "^6.12.3",
+    "uuid": "^10.0.0",
+    "ws": "^8.18.0"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "identifier": "weblio-embed-dict-plugin",
+  "type": "dictionary",
+  "displayName": "Weblio辞書",
+  "icon": "dict",
+  "version": "1.0.0",
+  "config": {},
+  "langList": [
+    { "lang": "English", "code": "ejje", "nativeLang": "English" },
+    { "lang": "Chinese", "code": "cjjc", "nativeLang": "Chinese" },
+    { "lang": "Korean", "code": "kjjk", "nativeLang": "Korean" },
+    { "lang": "Japanese", "code": "www", "nativeLang": "Japanese" }
+  ],
+  "scriptSHA256": "76120415ae7ccc0b84451c012d8ea81ef0cd56f623cdaafc7c90e17d68f46822",
+  "script": "async function getDictText(t,e,n,c,i,g){return`https://${\"en\"===n?\"ejje\":n}.weblio.jp/content/${encodeURIComponent(t)}`}window.getDictText=getDictText;"
+}

@@ -1,0 +1,13 @@
+{
+  "identifier": "godic-embed-dict-plugin",
+  "type": "dictionary",
+  "displayName": "德语助手",
+  "icon": "godic",
+  "version": "1.0.0",
+  "config": {},
+  "langList": [
+    { "lang": "Chinese", "code": "zh-CN", "nativeLang": "简体中文" }
+  ],
+  "scriptSHA256": "5eb3b780fdebb023d18b42136ecd3ca946a25cb3d0e0e6d03301eeaf9a14f488",
+  "script": "async function getDictText(t,e,c,i,n,g){return`https://www.godic.net/dicts/de/${encodeURIComponent(t)}`}window.getDictText=getDictText;"
+}

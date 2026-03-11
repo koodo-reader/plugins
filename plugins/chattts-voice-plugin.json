@@ -1,0 +1,57 @@
+{
+  "identifier": "chattts-voice-plugin",
+  "type": "voice",
+  "displayName": "ChatTTS",
+  "icon": "speaker",
+  "version": "1.0.0",
+  "config": {},
+  "voiceList": [
+    {
+      "name": "xiaoxiao",
+      "gender": "female",
+      "locale": "zh-CN",
+      "displayName": "Xiaoxiao",
+      "plugin": "chattts-voice-plugin",
+      "config": {
+        "url": "http://127.0.0.1:8000/generate_voice",
+        "body": {
+          "lang": null,
+          "skip_refine_text": true,
+          "refine_text_only": false,
+          "use_decoder": true,
+          "audio_seed": 12345678,
+          "text_seed": 87654321,
+          "do_text_normalization": true,
+          "do_homophone_replacement": false
+        },
+        "params_refine_text": {
+          "prompt": "",
+          "top_P": 0.7,
+          "top_K": 20,
+          "temperature": 0.7,
+          "repetition_penalty": 1,
+          "max_new_token": 384,
+          "min_new_token": 0,
+          "show_tqdm": true,
+          "ensure_non_empty": true,
+          "stream_batch": 24
+        },
+        "params_infer_code": {
+          "prompt": "[speed_5]",
+          "top_P": 0.1,
+          "top_K": 20,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_new_token": 2048,
+          "min_new_token": 0,
+          "show_tqdm": true,
+          "ensure_non_empty": true,
+          "stream_batch": true,
+          "spk_emb": null
+        }
+      }
+    }
+  ],
+  "scriptSHA256": "eedbe0c1854d84b23f7a2f39ecf06983955df38378166f32b4d33b1bd302d31e",
+  "script": "const getAudioPath=async(t,e,a,i)=>{let n=require(\"path\"),r=require(\"fs\"),o=new Date().getTime()+\".mp3\";return r.existsSync(n.join(a,\"tts\"))?(r.writeFileSync(n.join(a,\"tts\",o),await getTTSAudio(t,e,i)),console.log(\"\u6587\u4EF6\u5939\u5DF2\u5B58\u5728\")):(r.mkdirSync(n.join(a,\"tts\")),r.writeFileSync(n.join(a,\"tts\",o),await getTTSAudio(t,e,i)),console.log(\"\u6587\u4EF6\u5939\u521B\u5EFA\u6210\u529F\")),n.join(a,\"tts\",o)},getTTSAudio=async(t,e,a)=>{let i=a.url||\"http://127.0.0.1:8000/generate_voice\",n=a.body,r=a.params_refine_text;n.params_refine_text=r;let o=a.params_infer_code;n.params_infer_code=o,n.text=[t],n.stream=!1;let s=require(\"axios\");return new Promise((t,e)=>{console.log(\"sadfds\"),s.post(i,n,{responseType:\"arraybuffer\"}).then(e=>{var a,i;let n=require(\"adm-zip\");t(new n(e.data).getEntries()[0].getData())}).catch(t=>{console.log(t),e(\"\")})})};global.getAudioPath=getAudioPath;"
+}

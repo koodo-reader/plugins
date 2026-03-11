@@ -1,0 +1,25 @@
+{
+  "identifier": "collins-embed-dict-plugin",
+  "type": "dictionary",
+  "displayName": "Collins Dictionary",
+  "icon": "dict",
+  "version": "1.0.0",
+  "config": {},
+  "langList": [
+    { "lang": "english", "code": "english", "nativeLang": "English" },
+    {
+      "lang": "chinese",
+      "code": "chinese",
+      "nativeLang": "中文"
+    },
+    { "lang": "french", "code": "french", "nativeLang": "Français" },
+    { "lang": "german", "code": "german", "nativeLang": "Deutsch" },
+    { "lang": "italian", "code": "italian", "nativeLang": "Italiano" },
+    { "lang": "portuguese", "code": "portuguese", "nativeLang": "Português" },
+    { "lang": "spanish", "code": "spanish", "nativeLang": "Español" },
+    { "lang": "hindi", "code": "hindi", "nativeLang": "हिन्दी" },
+    { "lang": "korean", "code": "korean", "nativeLang": "한국어" }
+  ],
+  "scriptSHA256": "97b0c88294acd19bd050773816fc17c9154ade16eeb45fe41124de45c93783c2",
+  "script": "async function getDictText(t,i,c,e,n,o){return`https://www.collinsdictionary.com/dictionary/english${\"en\"===c?\"\":\"-\"+c}/${encodeURIComponent(t)}`}window.getDictText=getDictText;"
+}

@@ -1,0 +1,13 @@
+{
+  "identifier": "esdict-embed-dict-plugin",
+  "type": "dictionary",
+  "displayName": "西语助手",
+  "icon": "esdict",
+  "version": "1.0.0",
+  "config": {},
+  "langList": [
+    { "lang": "Chinese", "code": "zh-CN", "nativeLang": "简体中文" }
+  ],
+  "scriptSHA256": "a94df82e394702119a7b7a203026b8f0f6535d5805632c7727e4dcfca08f296f",
+  "script": "async function getDictText(t,e,c,i,n,s){return`https://www.esdict.cn/dicts/es/${encodeURIComponent(t)}`}window.getDictText=getDictText;"
+}

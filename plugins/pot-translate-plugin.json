@@ -1,0 +1,17 @@
+{
+  "identifier": "pot-translate-plugin",
+  "type": "translation",
+  "displayName": "Pot",
+  "icon": "translation",
+  "version": "1.0.0",
+  "autoValue": "",
+  "config": {
+    "host": "",
+    "port": ""
+  },
+  "langList": {
+    "": "Automatic"
+  },
+  "scriptSHA256": "8b40dcc5fe7f8c2099f8c6d8e9072ccb6482358c037c1bd745a6b0b4309bbb1e",
+  "script": "async function translate(t,a,n,r,s){let e=\"http://127.0.0.1:60828/translate\";return s.host&&s.port&&(e=`http://${s.host}:${s.port}/translate`),\"ok\"===(await r.post(e,t)).data?\"Pot is running\":\"Error happened\"}window.translate=translate;"
+}

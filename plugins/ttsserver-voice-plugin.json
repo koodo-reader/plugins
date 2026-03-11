@@ -1,0 +1,23 @@
+{
+  "identifier": "ttsserver-voice-plugin",
+  "type": "voice",
+  "displayName": "TTS Server",
+  "icon": "speaker",
+  "version": "1.0.0",
+  "config": {},
+  "voiceList": [
+    {
+      "name": "xiaoxiao",
+      "gender": "female",
+      "locale": "zh-CN",
+      "displayName": "Xiaoxiao",
+      "plugin": "ttsserver-voice-plugin",
+      "config": {
+        "host": "192.168.28.21",
+        "url": "http://localhost:1221/api/legado?api=http://localhost:1221/api/tts&name=TTS Server (com.github.jing332.tts_server_android)&engine=com.github.jing332.tts_server_android&pitch=100&voice=⚠️请在右上角打开多语音！晓晓（zh-CN-XiaoxiaoNeural）_1690331046541"
+      }
+    }
+  ],
+  "scriptSHA256": "101e5baea3973b7e79d4dc620b0961671c8ba7b97fe3ff85286245289d6ad925",
+  "script": "const getAudioPath=async(t,e,r,o)=>{let i=require(\"path\"),a=require(\"fs\"),n=new Date().getTime()+\".wav\";return a.existsSync(i.join(r,\"tts\"))?(a.writeFileSync(i.join(r,\"tts\",n),await getTTSAudio(t,e,o)),console.log(\"folder already exists\")):(a.mkdirSync(i.join(r,\"tts\")),a.writeFileSync(i.join(r,\"tts\",n),await getTTSAudio(t,e,o)),console.log(\"folder created successfully\")),i.join(r,\"tts\",n)},objectToQueryString=t=>{let e=[];for(let r in t)if(t.hasOwnProperty(r)){let o=t[r],i=encodeURIComponent(r),a=encodeURIComponent(o);e.push(`${i}=${a}`)}return e.join(\"&\")},getTTSAudio=async(t,e,r)=>{let o=r.host||\"127.0.0.1\",i=parseUrlParams(r.url||\"\"),a=i.api||\"http://localhost:1221/api/tts\",n=i.engine||\"com.github.jing332.tts_server_android\",s=i.pitch||\"100\",l=i.rate||\"50\",c=i.voice||\"\";a=a.replace(\"localhost\",o);let u=require(\"axios\");return new Promise((e,r)=>{u.get(a+\"?\"+objectToQueryString({engine:n,pitch:s,rate:l,voice:c,text:t}),{responseType:\"arraybuffer\"}).then(t=>{console.log(t),e(t.data)}).catch(t=>{console.log(t),r(\"\")})})};function parseUrlParams(t){let e=new URL(t),r=new URLSearchParams(e.search),o={};for(let[i,a]of r.entries())o[i]=decodeURIComponent(a);return o}global.getAudioPath=getAudioPath;"
+}

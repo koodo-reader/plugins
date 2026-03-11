@@ -1,0 +1,11 @@
+{
+  "identifier": "google-embed-dict-plugin",
+  "type": "dictionary",
+  "displayName": "Google",
+  "icon": "google",
+  "version": "1.0.0",
+  "config": {},
+  "langList": [{ "lang": "English", "code": "en", "nativeLang": "English" }],
+  "scriptSHA256": "dcdfecc360ca84591ad326a660cdc7654b539816e6ada689ce983259856e5c09",
+  "script": "async function getDictText(t,e,c,g,i,n){return`https://www.google.com/search?q=define+${encodeURIComponent(t)}`}window.getDictText=getDictText;"
+}

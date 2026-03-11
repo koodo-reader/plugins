@@ -1,0 +1,14 @@
+{
+  "identifier": "multitts-voice-plugin",
+  "type": "voice",
+  "displayName": "MultiTTS",
+  "icon": "speaker",
+  "version": "1.0.0",
+  "config": {
+    "host": "192.168.28.41",
+    "port": "8774"
+  },
+  "voiceList": [],
+  "scriptSHA256": "90b4e099af96e543b63be449b2988ba27b4e17583b19eb331914ad3492d5c84e",
+  "script": "const getAudioPath=async(t,e,o,i)=>{let a=require(\"path\"),l=require(\"fs\"),n=new Date().getTime()+\".wav\";return l.existsSync(a.join(o,\"tts\"))?(l.writeFileSync(a.join(o,\"tts\",n),await getTTSAudio(t,e,i)),console.log(\"folder already exists\")):(l.mkdirSync(a.join(o,\"tts\")),l.writeFileSync(a.join(o,\"tts\",n),await getTTSAudio(t,e,i)),console.log(\"folder created successfully\")),a.join(o,\"tts\",n)},objectToQueryString=t=>{let e=[];for(let o in t)if(t.hasOwnProperty(o)){let i=t[o],a=encodeURIComponent(o),l=encodeURIComponent(i);e.push(`${a}=${l}`)}return e.join(\"&\")},getTTSAudio=async(t,e,o)=>{let i,a=\"http://\"+(o.host||\"127.0.0.1\")+\":\"+(o.url||\"8774\")+\"/forward\",l=o.pitch||\"50\",n=50*e||\"50\",r=o.volume||\"50\",s=o.voice||\"\",c=require(\"axios\");return new Promise((e,o)=>{c.get(a+\"?\"+objectToQueryString({volume:r,pitch:l,speed:n,voice:s,text:t}),{responseType:\"arraybuffer\"}).then(t=>{console.log(t),e(t.data)}).catch(t=>{console.log(t),o(\"\")})})},getTTSVoice=async t=>{let e,o=\"http://\"+(t.host||\"127.0.0.1\")+\":\"+(t.url||\"8774\")+\"/voices\",i=require(\"axios\");return new Promise((e,a)=>{i.get(o).then(o=>{console.log(o);let i=o.data;(console.log(i,\"result\"),i.success)?e(Object.values(i.data.catalog).flat().map(e=>({name:e.id,gender:e.gender,locale:e.locale,displayName:e.name,plugin:\"multitts-voice-plugin\",config:t}))):e([])}).catch(t=>{console.log(t),a(\"\")})})};global.getAudioPath=getAudioPath,global.getTTSVoice=getTTSVoice;"
+}

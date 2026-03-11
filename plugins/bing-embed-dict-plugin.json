@@ -1,0 +1,13 @@
+{
+  "identifier": "bing-embed-dict-plugin",
+  "type": "dictionary",
+  "displayName": "Bing Dictionary",
+  "icon": "bing",
+  "version": "1.0.0",
+  "config": {},
+  "langList": [
+    { "lang": "Chinese", "code": "zh-CN", "nativeLang": "简体中文" }
+  ],
+  "scriptSHA256": "d36ce5709726419dbd15dfa47eb31390dd58cb9906e599cb86cd5517cf0646b1",
+  "script": "async function getDictText(t,c,e,i,n,g){return`https://cn.bing.com/dict?mkt=zh-CN&q=${encodeURIComponent(t)}`}window.getDictText=getDictText;"
+}

@@ -1,0 +1,29 @@
+{
+  "identifier": "transmart-embed-translate-plugin",
+  "type": "translation",
+  "displayName": "Transmart",
+  "icon": "transmart",
+  "version": "1.0.0",
+  "autoValue": "auto",
+  "config": {},
+  "langList": {
+    "auto": "Automatic",
+    "ar": "Arabic",
+    "de": "German",
+    "ru": "Russian",
+    "fr": "French",
+    "es": "Spanish",
+    "ko": "Korean",
+    "pt": "Portuguese",
+    "ja": "Japanese",
+    "th": "Thai",
+    "tr": "Turkish",
+    "it": "Italian",
+    "en": "English",
+    "vi": "Vietnamese",
+    "ct": "Cantonese",
+    "zh": "Chinese"
+  },
+  "scriptSHA256": "348ea7122eb06b1437fc13b51729800e0c576c45462fda3751369bfd485f68bb",
+  "script": "async function translate(t,a,n,r,e){return`https://transmart.qq.com/zh-CN/index?sourcelang=${a||\"auto\"}&targetlang=${n||\"zh\"}&source=${encodeURIComponent(t)}`}window.translate=translate;"
+}

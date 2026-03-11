@@ -1,0 +1,11 @@
+{
+  "identifier": "jisho-embed-dict-plugin",
+  "type": "dictionary",
+  "displayName": "Jisho",
+  "icon": "jisho",
+  "version": "1.0.0",
+  "config": {},
+  "langList": [{ "lang": "English", "code": "en", "nativeLang": "English" }],
+  "scriptSHA256": "8296e807a0848b23491aaeccf22dff10b22d046d036c1bd052ed9e8a720719ac",
+  "script": "async function getDictText(t,e,c,i,g,n){return`https://jisho.org/search/${encodeURIComponent(t)}`}window.getDictText=getDictText;"
+}

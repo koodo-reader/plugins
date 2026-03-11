@@ -1,0 +1,13 @@
+{
+  "identifier": "baidu-embed-dict-plugin",
+  "type": "dictionary",
+  "displayName": "百度百科",
+  "icon": "baidu",
+  "version": "1.0.0",
+  "config": {},
+  "langList": [
+    { "lang": "Chinese", "code": "zh-CN", "nativeLang": "简体中文" }
+  ],
+  "scriptSHA256": "f7cfb4ea849160a4c38ac5c381a9f5414315d81ce69ec6d30d2e0837b93af5e2",
+  "script": "async function getDictText(t,e,i,c,n,a){return`https://baike.baidu.com/item/${encodeURIComponent(t)}`}window.getDictText=getDictText;"
+}
