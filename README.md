@@ -14,12 +14,6 @@ This repository contains the official plugins for [Koodo Reader](https://github.
  package.json   # Node.js project manifest
 ```
 
-## Plugin Types
-
-- **Translation Plugins** Translate selected text to a target language, either via an embedded web view or a direct API call.
-- **Dictionary Plugins** Look up words in online dictionaries via an embedded web view.
-- **Voice Plugins (TTS)** Read text aloud using various local or remote TTS engines.
-
 ## Plugin JSON Format
 
 Each plugin is defined as a JSON file with the following structure:
