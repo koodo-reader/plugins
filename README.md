@@ -159,7 +159,7 @@ npm install
 
 1. Write the plugin source code in `code/<plugin-type>/<plugin-name>.js`.
 2. Write the plugin template in `plugins/<plugin-type>/<plugin-name>.json`.
-3. Minify and unescape the plugin source code. Recommended tools: [Online JavaScript Minifier Tool and Compressor](https://www.toptal.com/developers/javascript-minifier), [JSON Escape / Unescape](https://www.freeformatter.com/json-escape.html#before-output)
+3. Minify and escape the plugin source code. Recommended tools: [Online JavaScript Minifier Tool and Compressor](https://www.toptal.com/developers/javascript-minifier), [JSON Escape / Unescape](https://www.freeformatter.com/json-escape.html#before-output)
 4. Write the processed script into the `script` field of script template.
 5. Update the file path in `utils/getCodeSHA256.js` and run it. Fill the output hash value into the `scriptSHA256` field.
 

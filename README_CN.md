@@ -161,7 +161,7 @@ npm install
 
 1. 在 `code/<插件类型>/<插件名>.js` 中编写插件源代码。
 2. 在 `plugins/<插件类型>/<插件名>.json` 中编写插件模板。
-3. 压缩和 Unescape 插件源代码，推荐使用：[Online JavaScript Minifier Tool and Compressor](https://www.toptal.com/developers/javascript-minifier)，[JSON Escape / Unescape](https://www.freeformatter.com/json-escape.html#before-output)
+3. 压缩和 escape 插件源代码，推荐使用：[Online JavaScript Minifier Tool and Compressor](https://www.toptal.com/developers/javascript-minifier)，[JSON Escape / Unescape](https://www.freeformatter.com/json-escape.html#before-output)
 4. 将处理后的脚本写入插件模板的 `script` 字段。
 5. 修改 `utils/getCodeSHA256.js` 中的文件路径后运行，将输出的哈希值填入 `scriptSHA256` 字段。
 
