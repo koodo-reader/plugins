@@ -24,18 +24,34 @@ This repository contains the official plugins for [Koodo Reader](https://github.
 
 Each plugin is defined as a JSON file with the following structure:
 
-**Translation / Dictionary plugins:**
+**Translation plugins:**
 
 ```json
 {
   "identifier": "plugin-identifier",
-  "type": "translation | dictionary",
+  "type": "translation",
   "displayName": "Display Name",
   "icon": "icon-name",
   "version": "1.0.0",
   "autoValue": "auto",
   "config": {},
   "langList": { "en": "English", "...": "..." },
+  "scriptSHA256": "<sha256 of the script field>",
+  "script": "<minified JavaScript function>"
+}
+```
+
+**Dictionary plugins:**
+
+```json
+{
+  "identifier": "plugin-identifier",
+  "type": "dictionary",
+  "displayName": "Display Name",
+  "icon": "icon-name",
+  "version": "1.0.0",
+  "config": {},
+  "langList": [{ "lang": "English", "code": "en", "nativeLang": "English" }],
   "scriptSHA256": "<sha256 of the script field>",
   "script": "<minified JavaScript function>"
 }
@@ -84,6 +100,23 @@ async function translate(text, from, to, axios, config) {
 window.translate = translate;
 ```
 
+### Dictionary Script
+
+The `script` field must expose a `getDictText` function:
+
+```javascript
+async function getDictText(text, from, to, axios, t, config) {
+  // text   - the word or phrase to look up
+  // from   - source language code
+  // to     - target language code
+  // axios  - axios instance for HTTP requests
+  // t      - i18n translation function (e.g. t("Learn more"))
+  // config - user-provided configuration object
+  return "<p>HTML content</p>"; // or a URL string for embed-type plugins
+}
+window.getDictText = getDictText;
+```
+
 ### Voice Script
 
 The `script` field must expose a `getAudioPath` function:
@@ -124,10 +157,11 @@ npm install
 
 ### Adding a New Plugin
 
-1. Write the plugin source code in `code/<pluginName>.js` (unminified, readable format).
-2. Minify the script and embed it in the `script` field of the plugin JSON file under `plugins/`.
-3. Run `utils/getCodeSHA256.js` (update the file path inside) to compute the SHA-256 hash and set it as `scriptSHA256`.
-4. Ensure the `identifier`, `type`, `displayName`, `langList` / `voiceList` fields are correctly filled.
+1. Write the plugin source code in `code/<plugin-type>/<plugin-name>.js`.
+2. Write the plugin template in `plugins/<plugin-type>/<plugin-name>.json`.
+3. Minify and unescape the plugin source code. Recommended tools: [Online JavaScript Minifier Tool and Compressor](https://www.toptal.com/developers/javascript-minifier), [JSON Escape / Unescape](https://www.freeformatter.com/json-escape.html#before-output)
+4. Write the processed script into the `script` field of script template.
+5. Update the file path in `utils/getCodeSHA256.js` and run it. Fill the output hash value into the `scriptSHA256` field.
 
 ## License
 

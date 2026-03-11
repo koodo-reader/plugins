@@ -24,18 +24,36 @@
 
 每个插件以 JSON 文件定义，结构如下：
 
-**翻译 / 词典插件：**
+**翻译插件：**
 
 ```json
 {
   "identifier": "插件标识符",
-  "type": "translation | dictionary",
+  "type": "translation",
   "displayName": "显示名称",
   "icon": "图标名称",
   "version": "1.0.0",
   "autoValue": "auto",
   "config": {},
   "langList": { "en": "English", "...": "..." },
+  "scriptSHA256": "<script 字段的 SHA256 哈希>",
+  "script": "<压缩后的 JavaScript 函数>"
+}
+```
+
+**词典插件：**
+
+```json
+{
+  "identifier": "插件标识符",
+  "type": "dictionary",
+  "displayName": "显示名称",
+  "icon": "图标名称",
+  "version": "1.0.0",
+  "config": {},
+  "langList": [
+    { "lang": "Chinese", "code": "zh-CN", "nativeLang": "简体中文" }
+  ],
   "scriptSHA256": "<script 字段的 SHA256 哈希>",
   "script": "<压缩后的 JavaScript 函数>"
 }
@@ -84,6 +102,23 @@ async function translate(text, from, to, axios, config) {
 window.translate = translate;
 ```
 
+### 词典脚本
+
+`script` 字段须暴露 `getDictText` 函数：
+
+```javascript
+async function getDictText(text, from, to, axios, t, config) {
+  // text   - 待查询的词语或短语
+  // from   - 源语言代码
+  // to     - 目标语言代码
+  // axios  - 用于 HTTP 请求的 axios 实例
+  // t      - 国际化翻译函数（如 t("Learn more")）
+  // config - 用户配置对象
+  return "<p>HTML 内容</p>"; // 嵌入类插件可返回 URL 字符串
+}
+window.getDictText = getDictText;
+```
+
 ### 语音脚本
 
 `script` 字段须暴露 `getAudioPath` 函数：
@@ -124,10 +159,11 @@ npm install
 
 ### 添加新插件
 
-1. 在 `code/<插件名>.js` 中编写可读的未压缩插件源代码。
-2. 将脚本压缩后写入 `plugins/` 目录下对应 JSON 文件的 `script` 字段。
-3. 修改 `utils/getCodeSHA256.js` 中的文件路径后运行，将输出的哈希值填入 `scriptSHA256` 字段。
-4. 正确填写 `identifier`、`type`、`displayName`、`langList` / `voiceList` 等字段。
+1. 在 `code/<插件类型>/<插件名>.js` 中编写插件源代码。
+2. 在 `plugins/<插件类型>/<插件名>.json` 中编写插件模板。
+3. 压缩和 Unescape 插件源代码，推荐使用：[Online JavaScript Minifier Tool and Compressor](https://www.toptal.com/developers/javascript-minifier)，[JSON Escape / Unescape](https://www.freeformatter.com/json-escape.html#before-output)
+4. 将处理后的脚本写入插件模板的 `script` 字段。
+5. 修改 `utils/getCodeSHA256.js` 中的文件路径后运行，将输出的哈希值填入 `scriptSHA256` 字段。
 
 ## 开源许可
 
