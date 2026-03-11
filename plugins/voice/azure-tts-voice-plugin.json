@@ -1,0 +1,14 @@
+{
+  "identifier": "azure-tts-voice-plugin",
+  "type": "voice",
+  "displayName": "Azure TTS",
+  "icon": "speaker",
+  "version": "1.0.0",
+  "config": {
+    "region": "eastus",
+    "apiKey": ""
+  },
+  "voiceList": [],
+  "scriptSHA256": "0847cea0a9ff28f65f377a7dc9a19a281a7c9371bacf20a7a86a6b1265b117eb",
+  "script": "const getAudioPath=async(e,t,o,i)=>{let a=require(\"path\"),s=require(\"fs\"),n=new Date().getTime()+\".mp3\";return s.existsSync(a.join(o,\"tts\"))?(s.writeFileSync(a.join(o,\"tts\",n),await getTTSAudio(e,t,i)),console.log(\"folder already exists\")):(s.mkdirSync(a.join(o,\"tts\")),s.writeFileSync(a.join(o,\"tts\",n),await getTTSAudio(e,t,i)),console.log(\"folder created successfully\")),a.join(o,\"tts\",n)},getTTSAudio=async(e,t,o)=>{let i=o.region||\"eastus\",a=o.apiKey||\"\",s=o.voiceName||\"en-US-AvaMultilingualNeural\",n=\"audio-16khz-128kbitrate-mono-mp3\",r=`<speak version='1.0' xml:lang='en-US'><voice name='${s}'><prosody rate='${t?`${Math.round((t-1)*100)}%`:\"0%\"}'>${e}<\/prosody><\/voice><\/speak>`,c=`https:\/\/${i}.tts.speech.microsoft.com\/cognitiveservices\/v1`,l=require(\"axios\");return new Promise((e,t)=>{l.post(c,r,{headers:{\"Ocp-Apim-Subscription-Key\":a,\"Content-Type\":\"application\/ssml+xml\",\"X-Microsoft-OutputFormat\":n,\"User-Agent\":\"koodo-reader\"},responseType:\"arraybuffer\"}).then(t=>{console.log(t),e(t.data)}).catch(e=>{console.log(e),t(\"\")})})},getTTSVoice=async e=>{let t=e.region||\"eastus\",o=e.apiKey||\"\",i=`https:\/\/${t}.tts.speech.microsoft.com\/cognitiveservices\/voices\/list`,a=require(\"axios\");return new Promise((t,s)=>{a.get(i,{headers:{\"Ocp-Apim-Subscription-Key\":o}}).then(o=>{console.log(o);t(o.data.map(t=>({name:t.ShortName,gender:t.Gender.toLowerCase(),locale:t.Locale,displayName:`Azure TTS - ${t.LocalName} (${t.Locale}) - ${t.Gender}`,plugin:\"azure-tts-voice-plugin\",config:{...e,voiceName:t.ShortName}})))}).catch(e=>{console.log(e),s(\"\")})})};global.getAudioPath=getAudioPath,global.getTTSVoice=getTTSVoice;"
+}
