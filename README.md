@@ -132,6 +132,25 @@ const getAudioPath = async (text, speed, dirPath, config) => {
 global.getAudioPath = getAudioPath;
 ```
 
+Optionally, the `script` field can also expose a `getTTSVoice` function. This function is used to dynamically fetch the voice list and is only called when the `voiceList` field in the plugin template is an empty array (`[]`):
+
+```javascript
+const getTTSVoice = async (axios, config) => {
+  // axios  - axios instance for HTTP requests
+  // config - user-provided configuration object
+  return [
+    {
+      name: "voice-id",
+      gender: "female | male",
+      locale: "zh-CN",
+      displayName: "Voice Display Name",
+      config: {},
+    },
+  ];
+};
+global.getTTSVoice = getTTSVoice;
+```
+
 ## Utilities
 
 ### `utils/getCodeSHA256.js`

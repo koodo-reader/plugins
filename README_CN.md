@@ -134,6 +134,25 @@ const getAudioPath = async (text, speed, dirPath, config) => {
 global.getAudioPath = getAudioPath;
 ```
 
+`script` 字段还可以选择性地暴露 `getTTSVoice` 函数，该函数用于动态获取语音列表，仅当插件模板中的 `voiceList` 字段为空数组（`[]`）时才会被调用：
+
+```javascript
+const getTTSVoice = async (axios, config) => {
+  // axios  - 用于 HTTP 请求的 axios 实例
+  // config - 用户配置对象
+  return [
+    {
+      name: "音色 ID",
+      gender: "female | male",
+      locale: "zh-CN",
+      displayName: "音色显示名称",
+      config: {},
+    },
+  ];
+};
+global.getTTSVoice = getTTSVoice;
+```
+
 ## 工具脚本
 
 ### `utils/getCodeSHA256.js`
