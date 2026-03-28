@@ -1,0 +1,80 @@
+{
+  "timestamp": "2026-03-28T00:00:00.000Z",
+  "project": "koodo-reader-plugins",
+  "description": "Koodo Reader official plugin repository - translation, dictionary, and voice/TTS plugins",
+  "license": "AGPL-v3",
+  "rootCLAUDE": "CLAUDE.md",
+  "modules": [
+    {
+      "path": "code/translation",
+      "type": "source",
+      "language": "javascript",
+      "fileCount": 18,
+      "description": "Translation plugin source code (both API and embed types)",
+      "entryPattern": "*.js",
+      "testDir": null,
+      "configFile": null
+    },
+    {
+      "path": "code/dictionary",
+      "type": "source",
+      "language": "javascript",
+      "fileCount": 20,
+      "description": "Dictionary plugin source code (both API and embed types)",
+      "entryPattern": "*.js",
+      "testDir": null,
+      "configFile": null
+    },
+    {
+      "path": "code/voice",
+      "type": "source",
+      "language": "javascript",
+      "fileCount": 7,
+      "description": "Voice/TTS plugin source code (Node.js runtime)",
+      "entryPattern": "*.js",
+      "testDir": null,
+      "configFile": null
+    },
+    {
+      "path": "plugins/translation",
+      "type": "compiled",
+      "language": "json",
+      "fileCount": 18,
+      "description": "Compiled translation plugin JSON files with minified scripts and SHA-256 hashes"
+    },
+    {
+      "path": "plugins/dictionary",
+      "type": "compiled",
+      "language": "json",
+      "fileCount": 20,
+      "description": "Compiled dictionary plugin JSON files with minified scripts and SHA-256 hashes"
+    },
+    {
+      "path": "plugins/voice",
+      "type": "compiled",
+      "language": "json",
+      "fileCount": 7,
+      "description": "Compiled voice plugin JSON files with minified scripts and SHA-256 hashes"
+    },
+    {
+      "path": "utils",
+      "type": "tooling",
+      "language": "javascript",
+      "fileCount": 1,
+      "description": "SHA-256 hash generation utility for plugin script verification"
+    }
+  ],
+  "scan": {
+    "totalFiles": 90,
+    "scannedFiles": 55,
+    "coveragePercent": 61,
+    "ignoredPatterns": ["node_modules/**", ".git/**", "audios/**", "*.lock"],
+    "ignoredStats": {
+      "node_modules": "skipped (dependency directory)",
+      "audios": "skipped (generated audio output)"
+    },
+    "truncated": false
+  },
+  "gaps": [],
+  "nextSteps": []
+}

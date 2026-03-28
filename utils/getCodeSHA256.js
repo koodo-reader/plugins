@@ -5,7 +5,7 @@ const path = require("path");
 // 定义文件路径
 const filePath = path.join(
   __dirname,
-  "../plugins/voice/azure-tts-voice-plugin.json",
+  "../plugins/translation/baidu-llm-translate-plugin.json",
 );
 
 try {
