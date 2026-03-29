@@ -5,7 +5,7 @@ const path = require("path");
 // 定义文件路径
 const filePath = path.join(
   __dirname,
-  "../plugins/translation/baidu-llm-translate-plugin.json",
+  "../plugins/translation/tencent-translate-plugin.json",
 );
 
 try {
