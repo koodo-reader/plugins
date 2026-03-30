@@ -16,14 +16,14 @@ async function translate(text, from, to, axios, config) {
         typeof key === "string" ? new TextEncoder().encode(key) : key,
         { name: "HMAC", hash: "SHA-256" },
         false,
-        ["sign"],
+        ["sign"]
       )
       .then((cryptoKey) =>
         crypto.subtle.sign(
           "HMAC",
           cryptoKey,
-          typeof data === "string" ? new TextEncoder().encode(data) : data,
-        ),
+          typeof data === "string" ? new TextEncoder().encode(data) : data
+        )
       )
       .then((sig) => {
         if (encoding === "hex") {
@@ -38,7 +38,7 @@ async function translate(text, from, to, axios, config) {
   async function sha256Hex(data) {
     let buf = await crypto.subtle.digest(
       "SHA-256",
-      new TextEncoder().encode(data),
+      new TextEncoder().encode(data)
     );
     return Array.from(new Uint8Array(buf))
       .map((b) => b.toString(16).padStart(2, "0"))
@@ -109,17 +109,11 @@ async function translate(text, from, to, axios, config) {
     headers: requestHeaders,
   });
 
-  console.log(JSON.stringify(transRes.data, null, 2));
+  console.log(transRes);
   if (transRes.status === 200 && transRes.data.Response) {
     return transRes.data.Response.TargetText;
   } else {
     return "Error happened";
   }
 }
-translate("Hello world", "en", "zh", axios, {
-  secretId: "your-secret-id",
-  secretKey: "your-secret-key",
-  region: "ap-beijing",
-})
-  .then((res) => console.log(res))
-  .catch((err) => console.error(err));
+window.translate = translate;

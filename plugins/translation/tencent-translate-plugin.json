@@ -1,0 +1,36 @@
+{
+  "identifier": "tencent-translate-plugin",
+  "type": "translation",
+  "displayName": "Tencent Translate",
+  "icon": "translation",
+  "version": "1.0.0",
+  "autoValue": "",
+  "config": {
+    "secretId": "[Your Secret ID]",
+    "secretKey": "[Your Secret Key]",
+    "region": "ap-beijing"
+  },
+  "langList": {
+    "": "Automatic",
+    "zh": "Chinese (Simplified)",
+    "zh-TW": "Chinese (Traditional)",
+    "en": "English",
+    "ja": "Japanese",
+    "ko": "Korean",
+    "fr": "French",
+    "es": "Spanish",
+    "it": "Italian",
+    "de": "German",
+    "tr": "Turkish",
+    "ru": "Russian",
+    "pt": "Portuguese",
+    "vi": "Vietnamese",
+    "id": "Indonesian",
+    "th": "Thai",
+    "ms": "Malay",
+    "ar": "Arabic",
+    "hi": "Hindi"
+  },
+  "scriptSHA256": "3d9c3f732b6795b5704e838935b9600ee4caad3adb8c5bc1dd668c8ef023b71c",
+  "script": "async function translate(t,e,n,a,r){let o=r.secretId||\"\",i=r.secretKey||\"\",s=r.region||\"ap-beijing\",c=\"tmt.tencentcloudapi.com\";function p(t,e,n){return crypto.subtle.importKey(\"raw\",\"string\"==typeof t?(new TextEncoder).encode(t):t,{name:\"HMAC\",hash:\"SHA-256\"},!1,[\"sign\"]).then(t=>crypto.subtle.sign(\"HMAC\",t,\"string\"==typeof e?(new TextEncoder).encode(e):e)).then(t=>\"hex\"===n?Array.from(new Uint8Array(t)).map(t=>t.toString(16).padStart(2,\"0\")).join(\"\"):new Uint8Array(t))}async function d(t){let e=await crypto.subtle.digest(\"SHA-256\",(new TextEncoder).encode(t));return Array.from(new Uint8Array(e)).map(t=>t.toString(16).padStart(2,\"0\")).join(\"\")}let g=new Date,T=Math.floor(g.getTime()/1e3).toString(),l=g.toISOString().slice(0,10),u=JSON.stringify({SourceText:t,Source:e&&\"\"!==e?e:\"auto\",Target:n,ProjectId:0}),w=\"content-type;host\",y=[\"POST\",\"/\",\"\",`content-type:application/json\\nhost:${c}\\n`,w,await d(u)].join(\"\\n\"),S=\"TC3-HMAC-SHA256\",h=`${l}/tmt/tc3_request`,m=[S,T,h,await d(y)].join(\"\\n\"),A=await p(`TC3${i}`,l),C=await p(A,\"tmt\"),f=await p(C,\"tc3_request\"),$={\"Content-Type\":\"application/json\",Host:c,Authorization:`${S} Credential=${o}/${h}, SignedHeaders=${w}, Signature=${await p(f,m,\"hex\")}`,\"X-TC-Action\":\"TextTranslate\",\"X-TC-Version\":\"2018-03-21\",\"X-TC-Timestamp\":T,\"X-TC-Region\":s},j=await a.post(`https://${c}/`,u,{headers:$});return console.log(j),200===j.status&&j.data.Response?j.data.Response.TargetText:\"Error happened\"}window.translate=translate;"
+}
