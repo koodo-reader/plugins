@@ -117,7 +117,7 @@ async function translate(text, from, to, axios, config) {
   }
 }
 translate("Hello world", "en", "zh", axios, {
-  secretId: "your-secret-id",
+  secretId: "your-secret-id11",
   secretKey: "your-secret-key",
   region: "ap-beijing",
 })
