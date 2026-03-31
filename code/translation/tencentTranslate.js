@@ -1,119 +1,112 @@
+function toHex(buffer) {
+  return Array.from(new Uint8Array(buffer))
+    .map((b) => b.toString(16).padStart(2, "0"))
+    .join("");
+}
+
+async function sha256(message) {
+  const data =
+    typeof message === "string" ? new TextEncoder().encode(message) : message;
+  return crypto.subtle.digest("SHA-256", data);
+}
+
+async function sha256Hex(message) {
+  return toHex(await sha256(message));
+}
+
+async function hmacSha256(key, message, encoding) {
+  const rawKey = typeof key === "string" ? new TextEncoder().encode(key) : key;
+  const data =
+    typeof message === "string" ? new TextEncoder().encode(message) : message;
+  const cryptoKey = await crypto.subtle.importKey(
+    "raw",
+    rawKey,
+    { name: "HMAC", hash: "SHA-256" },
+    false,
+    ["sign"],
+  );
+  const signature = await crypto.subtle.sign("HMAC", cryptoKey, data);
+  return encoding === "hex" ? toHex(signature) : signature;
+}
+
+function getDate(timestamp) {
+  const date = new Date(timestamp * 1000);
+  const year = date.getUTCFullYear();
+  const month = String(date.getUTCMonth() + 1).padStart(2, "0");
+  const day = String(date.getUTCDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
 async function translate(text, from, to, axios, config) {
-  let secretId = config.secretId || "";
-  let secretKey = config.secretKey || "";
-  let region = config.region || "ap-beijing";
+  const secretId = (config && config.secretId) || "";
+  const secretKey = (config && config.secretKey) || "";
+  const region = (config && config.region) || "ap-beijing";
+  const host = "tmt.tencentcloudapi.com";
+  const service = "tmt";
+  const action = "TextTranslate";
+  const version = "2018-03-21";
+  const timestamp = Math.floor(Date.now() / 1000);
+  const date = getDate(timestamp);
 
-  let endpoint = "tmt.tencentcloudapi.com";
-  let service = "tmt";
-  let action = "TextTranslate";
-  let version = "2018-03-21";
-
-  // TC3-HMAC-SHA256 signature
-  function hmac(key, data, encoding) {
-    return crypto.subtle
-      .importKey(
-        "raw",
-        typeof key === "string" ? new TextEncoder().encode(key) : key,
-        { name: "HMAC", hash: "SHA-256" },
-        false,
-        ["sign"]
-      )
-      .then((cryptoKey) =>
-        crypto.subtle.sign(
-          "HMAC",
-          cryptoKey,
-          typeof data === "string" ? new TextEncoder().encode(data) : data
-        )
-      )
-      .then((sig) => {
-        if (encoding === "hex") {
-          return Array.from(new Uint8Array(sig))
-            .map((b) => b.toString(16).padStart(2, "0"))
-            .join("");
-        }
-        return new Uint8Array(sig);
-      });
+  if (!secretId || !secretKey) {
+    return "Missing Tencent Cloud secretId or secretKey";
   }
 
-  async function sha256Hex(data) {
-    let buf = await crypto.subtle.digest(
-      "SHA-256",
-      new TextEncoder().encode(data)
-    );
-    return Array.from(new Uint8Array(buf))
-      .map((b) => b.toString(16).padStart(2, "0"))
-      .join("");
-  }
-
-  let now = new Date();
-  let timestamp = Math.floor(now.getTime() / 1000).toString();
-  let dateStamp = now.toISOString().slice(0, 10);
-
-  let body = JSON.stringify({
+  const payload = JSON.stringify({
     SourceText: text,
     Source: from && from !== "" ? from : "auto",
-    Target: to,
+    Target: to || "zh",
     ProjectId: 0,
   });
 
-  let payloadHash = await sha256Hex(body);
-
-  // Canonical headers (sorted)
-  let signedHeaders = "content-type;host";
-  let canonicalHeaders = `content-type:application/json\nhost:${endpoint}\n`;
-
-  // Canonical request
-  let canonicalRequest = [
+  const signedHeaders = "content-type;host";
+  const canonicalHeaders =
+    `content-type:application/json; charset=utf-8\n` + `host:${host}\n`;
+  const canonicalRequest = [
     "POST",
     "/",
-    "", // no query string
+    "",
     canonicalHeaders,
     signedHeaders,
-    payloadHash,
+    await sha256Hex(payload),
   ].join("\n");
 
-  // String to sign
-  let algorithm = "TC3-HMAC-SHA256";
-  let credentialScope = `${dateStamp}/${service}/tc3_request`;
-  let canonicalRequestHash = await sha256Hex(canonicalRequest);
-
-  let stringToSign = [
-    algorithm,
-    timestamp,
+  const credentialScope = `${date}/${service}/tc3_request`;
+  const stringToSign = [
+    "TC3-HMAC-SHA256",
+    String(timestamp),
     credentialScope,
-    canonicalRequestHash,
+    await sha256Hex(canonicalRequest),
   ].join("\n");
 
-  // Derive signing key
-  let kDate = await hmac(`TC3${secretKey}`, dateStamp);
-  let kService = await hmac(kDate, service);
-  let kSigning = await hmac(kService, "tc3_request");
-  let signature = await hmac(kSigning, stringToSign, "hex");
+  const kDate = await hmacSha256(`TC3${secretKey}`, date);
+  const kService = await hmacSha256(kDate, service);
+  const kSigning = await hmacSha256(kService, "tc3_request");
+  const signature = await hmacSha256(kSigning, stringToSign, "hex");
 
-  // Authorization header
-  let authorizationHeader =
-    `${algorithm} Credential=${secretId}/${credentialScope}, ` +
+  const authorization =
+    `TC3-HMAC-SHA256 Credential=${secretId}/${credentialScope}, ` +
     `SignedHeaders=${signedHeaders}, Signature=${signature}`;
 
-  let requestHeaders = {
-    "Content-Type": "application/json",
-    Host: endpoint,
-    Authorization: authorizationHeader,
+  const headers = {
+    Authorization: authorization,
+    "Content-Type": "application/json; charset=utf-8",
     "X-TC-Action": action,
+    "X-TC-Timestamp": String(timestamp),
     "X-TC-Version": version,
-    "X-TC-Timestamp": timestamp,
     "X-TC-Region": region,
   };
 
-  let transRes = await axios.post(`https://${endpoint}/`, body, {
-    headers: requestHeaders,
-  });
+  const res = await axios.post(`https://${host}/`, payload, { headers });
 
-  console.log(transRes);
-  if (transRes.status === 200 && transRes.data.Response) {
-    return transRes.data.Response.TargetText;
-  } else {
-    return "Error happened";
+  if (res.status === 200 && res.data && res.data.Response) {
+    if (res.data.Response.Error) {
+      return `${res.data.Response.Error.Code}: ${res.data.Response.Error.Message}`;
+    }
+    return res.data.Response.TargetText;
   }
+
+  return "Error happened";
 }
+
 window.translate = translate;

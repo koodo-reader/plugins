@@ -9,3 +9,5 @@ yarn.lock
 audios/
 
 /index.js
+
+.env
