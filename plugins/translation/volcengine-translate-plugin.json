@@ -1,0 +1,37 @@
+{
+  "identifier": "volcengine-translate-plugin",
+  "type": "translation",
+  "displayName": "Volcengine Translate",
+  "icon": "translation",
+  "version": "1.0.0",
+  "autoValue": "",
+  "config": {
+    "accessKeyId": "[Your Access Key ID]",
+    "secretAccessKey": "[Your Secret Access Key]",
+    "region": "cn-north-1",
+    "host": "translate.volcengineapi.com"
+  },
+  "langList": {
+    "": "Automatic",
+    "zh": "Chinese (Simplified)",
+    "zh-Hant": "Chinese (Traditional)",
+    "en": "English",
+    "ja": "Japanese",
+    "ko": "Korean",
+    "fr": "French",
+    "es": "Spanish",
+    "it": "Italian",
+    "de": "German",
+    "tr": "Turkish",
+    "ru": "Russian",
+    "pt": "Portuguese",
+    "vi": "Vietnamese",
+    "id": "Indonesian",
+    "th": "Thai",
+    "ms": "Malay",
+    "ar": "Arabic",
+    "hi": "Hindi"
+  },
+  "scriptSHA256": "07130afa8b0d1b85bd3e215cfd157c51451ee9f9f691559299a6bb0c228f4245",
+  "script": "function percentEncode(value) {\n  return encodeURIComponent(String(value))\n    .replace(/[!'()*]/g, (char) =>\n      `%${char.charCodeAt(0).toString(16).toUpperCase()}`,\n    );\n}\n\nfunction toHex(buffer) {\n  return Array.from(new Uint8Array(buffer))\n    .map((byte) => byte.toString(16).padStart(2, \"0\"))\n    .join(\"\");\n}\n\nasync function sha256(message) {\n  const data =\n    typeof message === \"string\" ? new TextEncoder().encode(message) : message;\n  return crypto.subtle.digest(\"SHA-256\", data);\n}\n\nasync function sha256Hex(message) {\n  return toHex(await sha256(message));\n}\n\nasync function hmacSha256(key, message, encoding) {\n  const rawKey = typeof key === \"string\" ? new TextEncoder().encode(key) : key;\n  const data =\n    typeof message === \"string\" ? new TextEncoder().encode(message) : message;\n  const cryptoKey = await crypto.subtle.importKey(\n    \"raw\",\n    rawKey,\n    { name: \"HMAC\", hash: \"SHA-256\" },\n    false,\n    [\"sign\"],\n  );\n  const signature = await crypto.subtle.sign(\"HMAC\", cryptoKey, data);\n  return encoding === \"hex\" ? toHex(signature) : signature;\n}\n\nfunction getRequestDate() {\n  return new Date().toISOString().replace(/[-:]/g, \"\").replace(/\\.\\d{3}Z$/, \"Z\");\n}\n\nfunction buildCanonicalQuery(params) {\n  return Object.keys(params)\n    .sort()\n    .map((key) => `${percentEncode(key)}=${percentEncode(params[key])}`)\n    .join(\"&\");\n}\n\nfunction buildCanonicalHeaders(headers) {\n  return Object.keys(headers)\n    .sort()\n    .map((key) => `${key}:${String(headers[key]).trim().replace(/\\s+/g, \" \")}`)\n    .join(\"\\n\");\n}\n\nasync function translate(text, from, to, axios, config) {\n  const accessKeyId = (config && config.accessKeyId) || \"\";\n  const secretAccessKey = (config && config.secretAccessKey) || \"\";\n  const region = (config && config.region) || \"cn-north-1\";\n  const sessionToken = (config && config.sessionToken) || \"\";\n  const host = (config && config.host) || \"translate.volcengineapi.com\";\n  const action = \"TranslateText\";\n  const version = \"2020-06-01\";\n  const service = \"translate\";\n\n  if (!accessKeyId || !secretAccessKey) {\n    return \"Missing Volcengine accessKeyId or secretAccessKey\";\n  }\n\n  const payloadObject = {\n    TargetLanguage: to || \"zh\",\n    TextList: [text],\n  };\n\n  if (from && from !== \"\" && from !== \"detect\" && from !== \"auto\") {\n    payloadObject.SourceLanguage = from;\n  }\n\n  const payload = JSON.stringify(payloadObject);\n  const hashedPayload = await sha256Hex(payload);\n  const requestDate = getRequestDate();\n  const shortDate = requestDate.slice(0, 8);\n  const query = buildCanonicalQuery({\n    Action: action,\n    Version: version,\n  });\n\n  const canonicalHeadersMap = {\n    \"content-type\": \"application/json\",\n    host: host,\n    \"x-content-sha256\": hashedPayload,\n    \"x-date\": requestDate,\n  };\n\n  if (sessionToken) {\n    canonicalHeadersMap[\"x-security-token\"] = sessionToken;\n  }\n\n  const signedHeaders = Object.keys(canonicalHeadersMap).sort().join(\";\");\n  const canonicalHeaders = `${buildCanonicalHeaders(canonicalHeadersMap)}\\n`;\n  const canonicalRequest = [\n    \"POST\",\n    \"/\",\n    query,\n    canonicalHeaders,\n    signedHeaders,\n    hashedPayload,\n  ].join(\"\\n\");\n\n  const credentialScope = `${shortDate}/${region}/${service}/request`;\n  const stringToSign = [\n    \"HMAC-SHA256\",\n    requestDate,\n    credentialScope,\n    await sha256Hex(canonicalRequest),\n  ].join(\"\\n\");\n\n  const kDate = await hmacSha256(secretAccessKey, shortDate);\n  const kRegion = await hmacSha256(kDate, region);\n  const kService = await hmacSha256(kRegion, service);\n  const kSigning = await hmacSha256(kService, \"request\");\n  const signature = await hmacSha256(kSigning, stringToSign, \"hex\");\n  const authorization =\n    `HMAC-SHA256 Credential=${accessKeyId}/${credentialScope}, ` +\n    `SignedHeaders=${signedHeaders}, Signature=${signature}`;\n\n  const headers = {\n    Authorization: authorization,\n    \"Content-Type\": \"application/json\",\n    \"X-Content-Sha256\": hashedPayload,\n    \"X-Date\": requestDate,\n  };\n\n  if (sessionToken) {\n    headers[\"X-Security-Token\"] = sessionToken;\n  }\n\n  try {\n    const res = await axios.post(`https://${host}/?${query}`, payload, {\n      headers,\n    });\n\n    if (res.status === 200 && res.data) {\n      const { ResponseMetadata, TranslationList } = res.data;\n      if (ResponseMetadata && ResponseMetadata.Error) {\n        return `${ResponseMetadata.Error.Code}: ${ResponseMetadata.Error.Message}`;\n      }\n      if (\n        Array.isArray(TranslationList) &&\n        TranslationList[0] &&\n        typeof TranslationList[0].Translation === \"string\"\n      ) {\n        return TranslationList[0].Translation;\n      }\n    }\n\n    return \"Error happened\";\n  } catch (error) {\n    if (error.response && error.response.data) {\n      const data = error.response.data;\n      if (typeof data === \"string\") {\n        return data;\n      }\n      if (data.ResponseMetadata && data.ResponseMetadata.Error) {\n        const apiError = data.ResponseMetadata.Error;\n        return `${apiError.Code}: ${apiError.Message}`;\n      }\n      if (data.message) {\n        return data.message;\n      }\n    }\n    return error.message || \"Error happened\";\n  }\n}\n\nwindow.translate = translate;\n"
+}
