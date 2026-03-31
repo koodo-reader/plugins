@@ -1,0 +1,30 @@
+{
+  "identifier": "caiyun-translate-plugin",
+  "type": "translation",
+  "displayName": "Caiyun Translate",
+  "icon": "translation",
+  "version": "1.0.0",
+  "autoValue": "",
+  "config": {
+    "token": "[Your Caiyun Token]",
+    "endpoint": "https://api.interpreter.caiyunai.com/v1/translator"
+  },
+  "langList": {
+    "": "Automatic",
+    "zh": "Chinese (Simplified)",
+    "zh-Hant": "Chinese (Traditional)",
+    "en": "English",
+    "ja": "Japanese",
+    "ko": "Korean",
+    "de": "German",
+    "es": "Spanish",
+    "fr": "French",
+    "it": "Italian",
+    "pt": "Portuguese",
+    "ru": "Russian",
+    "tr": "Turkish",
+    "vi": "Vietnamese"
+  },
+  "scriptSHA256": "a0be8c7485c6cc3848bbda244ad0a0d55ce5a0080c6d0f1ceedaf8a5b2b1d7cd",
+  "script": "function getRequestId() {\n  if (typeof crypto.randomUUID === \"function\") {\n    return crypto.randomUUID();\n  }\n\n  const bytes = new Uint8Array(16);\n  crypto.getRandomValues(bytes);\n  return Array.from(bytes)\n    .map((byte) => byte.toString(16).padStart(2, \"0\"))\n    .join(\"\");\n}\n\nasync function translate(text, from, to, axios, config) {\n  const token = (config && config.token) || \"\";\n  const endpoint =\n    (config && config.endpoint) ||\n    \"https://api.interpreter.caiyunai.com/v1/translator\";\n  const sourceLanguage = from || \"auto\";\n  const targetLanguage = to || \"zh\";\n\n  if (!token) {\n    return \"Missing Caiyun token\";\n  }\n\n  if (sourceLanguage === targetLanguage) {\n    return text;\n  }\n\n  const payload = {\n    source: text,\n    trans_type: `${sourceLanguage}2${targetLanguage}`,\n    request_id: getRequestId(),\n    detect: sourceLanguage === \"auto\",\n    media: \"text\",\n  };\n\n  try {\n    const response = await axios.post(endpoint, payload, {\n      headers: {\n        \"Content-Type\": \"application/json\",\n        \"X-Authorization\": `token ${token}`,\n      },\n    });\n\n    if (response.status === 200 && response.data) {\n      if (typeof response.data.target === \"string\") {\n        return response.data.target;\n      }\n\n      if (\n        Array.isArray(response.data.target) &&\n        typeof response.data.target[0] === \"string\"\n      ) {\n        return response.data.target[0];\n      }\n\n      if (response.data.message) {\n        return response.data.message;\n      }\n    }\n\n    return \"Error happened\";\n  } catch (error) {\n    if (error.response && error.response.data) {\n      const data = error.response.data;\n      if (typeof data === \"string\") {\n        return data;\n      }\n      if (data.message) {\n        return data.message;\n      }\n      if (data.error) {\n        return typeof data.error === \"string\"\n          ? data.error\n          : JSON.stringify(data.error);\n      }\n    }\n\n    return error.message || \"Error happened\";\n  }\n}\n\nwindow.translate = translate;\n"
+}
