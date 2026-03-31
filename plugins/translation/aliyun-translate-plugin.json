@@ -1,0 +1,37 @@
+{
+  "identifier": "aliyun-translate-plugin",
+  "type": "translation",
+  "displayName": "Alibaba Cloud Translate",
+  "icon": "translation",
+  "version": "1.0.0",
+  "autoValue": "",
+  "config": {
+    "accessKeyId": "[Your Access Key ID]",
+    "accessKeySecret": "[Your Access Key Secret]",
+    "endpoint": "https://mt.cn-hangzhou.aliyuncs.com/",
+    "regionId": "cn-hangzhou",
+    "formatType": "text"
+  },
+  "langList": {
+    "": "Automatic",
+    "zh": "Chinese (Simplified)",
+    "en": "English",
+    "ja": "Japanese",
+    "ko": "Korean",
+    "fr": "French",
+    "es": "Spanish",
+    "it": "Italian",
+    "de": "German",
+    "tr": "Turkish",
+    "ru": "Russian",
+    "pt": "Portuguese",
+    "vi": "Vietnamese",
+    "id": "Indonesian",
+    "th": "Thai",
+    "ms": "Malay",
+    "ar": "Arabic",
+    "hi": "Hindi"
+  },
+  "scriptSHA256": "634a319d110cf580c3cc83a1f8d59dceee25b505af028f10a6e9ccc2befee695",
+  "script": "function percentEncode(value) {\n  return encodeURIComponent(value)\n    .replace(/\\+/g, \"%20\")\n    .replace(/\\*/g, \"%2A\")\n    .replace(/%7E/g, \"~\");\n}\n\nfunction toBase64(buffer) {\n  let binary = \"\";\n  const bytes = new Uint8Array(buffer);\n  for (let i = 0; i < bytes.length; i += 1) {\n    binary += String.fromCharCode(bytes[i]);\n  }\n  return btoa(binary);\n}\n\nasync function hmacSha1Base64(key, message) {\n  const rawKey = new TextEncoder().encode(key);\n  const data = new TextEncoder().encode(message);\n  const cryptoKey = await crypto.subtle.importKey(\n    \"raw\",\n    rawKey,\n    { name: \"HMAC\", hash: \"SHA-1\" },\n    false,\n    [\"sign\"],\n  );\n  const signature = await crypto.subtle.sign(\"HMAC\", cryptoKey, data);\n  return toBase64(signature);\n}\n\nfunction getTimestamp() {\n  return new Date().toISOString().replace(/\\.\\d{3}Z$/, \"Z\");\n}\n\nfunction getNonce() {\n  if (typeof crypto.randomUUID === \"function\") {\n    return crypto.randomUUID();\n  }\n\n  const bytes = new Uint8Array(16);\n  crypto.getRandomValues(bytes);\n  return Array.from(bytes)\n    .map((byte) => byte.toString(16).padStart(2, \"0\"))\n    .join(\"\");\n}\n\nfunction buildCanonicalQuery(params) {\n  return Object.keys(params)\n    .sort()\n    .map((key) => `${percentEncode(key)}=${percentEncode(params[key])}`)\n    .join(\"&\");\n}\n\nasync function translate(text, from, to, axios, config) {\n  const accessKeyId = (config && config.accessKeyId) || \"\";\n  const accessKeySecret = (config && config.accessKeySecret) || \"\";\n  const endpoint = (config && config.endpoint) || \"https://mt.cn-hangzhou.aliyuncs.com/\";\n  const regionId = (config && config.regionId) || \"cn-hangzhou\";\n  const formatType = (config && config.formatType) || \"text\";\n  const sourceLanguage = from && from !== \"\" ? from : \"auto\";\n  const targetLanguage = to || \"zh\";\n\n  if (!accessKeyId || !accessKeySecret) {\n    return \"Missing Alibaba Cloud accessKeyId or accessKeySecret\";\n  }\n\n  const params = {\n    AccessKeyId: accessKeyId,\n    Action: \"TranslateGeneral\",\n    Format: \"JSON\",\n    FormatType: formatType,\n    RegionId: regionId,\n    Scene: \"general\",\n    SignatureMethod: \"HMAC-SHA1\",\n    SignatureNonce: getNonce(),\n    SignatureVersion: \"1.0\",\n    SourceLanguage: sourceLanguage,\n    SourceText: text,\n    TargetLanguage: targetLanguage,\n    Timestamp: getTimestamp(),\n    Version: \"2018-10-12\",\n  };\n\n  if (config && config.context) {\n    params.Context = config.context;\n  }\n\n  const canonicalizedQueryString = buildCanonicalQuery(params);\n  const stringToSign = `POST&${percentEncode(\"/\")}&${percentEncode(canonicalizedQueryString)}`;\n  params.Signature = await hmacSha1Base64(`${accessKeySecret}&`, stringToSign);\n\n  try {\n    const body = new URLSearchParams();\n    Object.keys(params).forEach((key) => {\n      body.append(key, params[key]);\n    });\n\n    const res = await axios.post(endpoint, body.toString(), {\n      headers: {\n        \"Content-Type\": \"application/x-www-form-urlencoded\",\n      },\n    });\n\n    if (res.status === 200 && res.data) {\n      if (res.data.Code && Number(res.data.Code) !== 200) {\n        return `${res.data.Code}: ${res.data.Message || \"Request failed\"}`;\n      }\n      if (res.data.Data && res.data.Data.Translated) {\n        return res.data.Data.Translated;\n      }\n      if (res.data.Message) {\n        return res.data.Message;\n      }\n    }\n\n    return \"Error happened\";\n  } catch (error) {\n    if (error.response && error.response.data) {\n      const data = error.response.data;\n      if (typeof data === \"string\") {\n        return data;\n      }\n      if (data.Code || data.Message) {\n        return `${data.Code || error.response.status}: ${data.Message || \"Request failed\"}`;\n      }\n    }\n    return error.message || \"Error happened\";\n  }\n}\n\nwindow.translate = translate;\n"
+}
