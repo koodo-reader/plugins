@@ -1,0 +1,15 @@
+{
+  "identifier": "openai-tts-voice-plugin",
+  "type": "voice",
+  "displayName": "OpenAI TTS",
+  "icon": "speaker",
+  "version": "1.0.0",
+  "config": {
+    "apiKey": "",
+    "baseUrl": "https://api.openai.com",
+    "model": "gpt-4o-mini-tts"
+  },
+  "voiceList": [],
+  "scriptSHA256": "424c7d0d05025b85d756b262068ea279743bbde43b7defa7c39faa5bb99a5d79",
+  "script": "let getAudioPath=async(e,a,n,t)=>{var o=require(\"path\"),r=require(\"fs\"),i=(new Date).getTime()+\".mp3\";return r.existsSync(o.join(n,\"tts\"))?(r.writeFileSync(o.join(n,\"tts\",i),await getTTSAudio(e,a,t)),console.log(\"folder already exists\")):(r.mkdirSync(o.join(n,\"tts\")),r.writeFileSync(o.join(n,\"tts\",i),await getTTSAudio(e,a,t)),console.log(\"folder created successfully\")),o.join(n,\"tts\",i)},getTTSAudio=async(e,a,n)=>{let t=n.apiKey||\"\";var o=n.baseUrl||\"https://api.openai.com\";let r=n.model||\"gpt-4o-mini-tts\",i=n.voiceName||\"coral\",l=a?Math.min(4,Math.max(.25,a)):1,m=o+\"/v1/audio/speech\",s=require(\"axios\");return new Promise((a,n)=>{s.post(m,{model:r,input:e,voice:i,speed:l,response_format:\"mp3\"},{headers:{Authorization:\"Bearer \"+t,\"Content-Type\":\"application/json\"},responseType:\"arraybuffer\"}).then(e=>{console.log(e),a(e.data)}).catch(e=>{console.log(e),n(\"\")})})},getTTSVoice=async a=>Promise.resolve([{name:\"alloy\",gender:\"neutral\"},{name:\"ash\",gender:\"neutral\"},{name:\"ballad\",gender:\"neutral\"},{name:\"coral\",gender:\"female\"},{name:\"echo\",gender:\"male\"},{name:\"fable\",gender:\"neutral\"},{name:\"nova\",gender:\"female\"},{name:\"onyx\",gender:\"male\"},{name:\"sage\",gender:\"neutral\"},{name:\"shimmer\",gender:\"female\"},{name:\"verse\",gender:\"neutral\"},{name:\"marin\",gender:\"female\"},{name:\"cedar\",gender:\"male\"}].map(e=>({name:e.name,gender:e.gender,locale:\"multilingual\",displayName:\"OpenAI TTS - \"+e.name,plugin:\"openai-tts-voice-plugin\",config:{...a,voiceName:e.name}})));global.getAudioPath=getAudioPath,global.getTTSVoice=getTTSVoice;"
+}
