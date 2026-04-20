@@ -1,0 +1,14 @@
+{
+  "identifier": "elevenlabs-tts-voice-plugin",
+  "type": "voice",
+  "displayName": "ElevenLabs TTS",
+  "icon": "speaker",
+  "version": "1.0.0",
+  "config": {
+    "apiKey": "",
+    "modelId": "eleven_multilingual_v2"
+  },
+  "voiceList": [],
+  "scriptSHA256": "1bda2f9f5ea6e2e83c00e44762c53d42edaa4d0ccabfeb8686ffaf720718371e",
+  "script": "const getAudioPath=async(e,t,i,a)=>{let o=require(\"path\"),n=require(\"fs\"),s=new Date().getTime()+\".mp3\";return n.existsSync(o.join(i,\"tts\"))?(n.writeFileSync(o.join(i,\"tts\",s),await getTTSAudio(e,t,a)),console.log(\"folder already exists\")):(n.mkdirSync(o.join(i,\"tts\")),n.writeFileSync(o.join(i,\"tts\",s),await getTTSAudio(e,t,a)),console.log(\"folder created successfully\")),o.join(i,\"tts\",s)},getTTSAudio=async(e,t,i)=>{let a=i.apiKey||\"\",o=i.voiceId||\"JBFqnCBsd6RMkjVDRZzb\",n=i.modelId||\"eleven_multilingual_v2\",s={speed:t||1},l=`https:\/\/api.elevenlabs.io\/v1\/text-to-speech\/${o}?output_format=mp3_44100_128`,g=require(\"axios\");return new Promise((t,i)=>{g.post(l,{text:e,model_id:n,voice_settings:s},{headers:{\"xi-api-key\":a,\"Content-Type\":\"application\/json\"},responseType:\"arraybuffer\"}).then(e=>{console.log(e),t(e.data)}).catch(e=>{console.log(e),i(\"\")})})},getTTSVoice=async e=>{let t=e.apiKey||\"\",i=\"https:\/\/api.elevenlabs.io\/v2\/voices?page_size=100\",a=require(\"axios\");return new Promise((o,n)=>{a.get(i,{headers:{\"xi-api-key\":t}}).then(t=>{console.log(t);o(t.data.voices.map(t=>{let i=t.labels||{},a=i.gender||\"unknown\",o=i.language||t.verified_languages&&t.verified_languages[0]&&t.verified_languages[0].locale||\"\";return{name:t.voice_id,gender:a.toLowerCase(),locale:o,displayName:`ElevenLabs - ${t.name}${o?` (${o})`:\"\"}`,plugin:\"elevenlabs-tts-voice-plugin\",config:{...e,voiceId:t.voice_id}}}))}).catch(e=>{console.log(e),n(\"\")})})};global.getAudioPath=getAudioPath,global.getTTSVoice=getTTSVoice;"
+}
