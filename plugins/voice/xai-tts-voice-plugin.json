@@ -1,0 +1,13 @@
+{
+  "identifier": "xai-tts-voice-plugin",
+  "type": "voice",
+  "displayName": "xAI TTS",
+  "icon": "speaker",
+  "version": "1.0.0",
+  "config": {
+    "apiKey": ""
+  },
+  "voiceList": [],
+  "scriptSHA256": "79fd0cd71d01d802f135e46c79d622d99e78821b60584140b57b6d4a20bad902",
+  "script": "const getAudioPath=async(e,a,o,n)=>{const t=require(\"path\"),i=require(\"fs\");let c=(new Date).getTime()+\".mp3\";return i.existsSync(t.join(o,\"tts\"))?(i.writeFileSync(t.join(o,\"tts\",c),await getTTSAudio(e,a,n)),console.log(\"folder already exists\")):(i.mkdirSync(t.join(o,\"tts\")),i.writeFileSync(t.join(o,\"tts\",c),await getTTSAudio(e,a,n)),console.log(\"folder created successfully\")),t.join(o,\"tts\",c)},getTTSAudio=async(e,a,o)=>{let n=o.apiKey||\"\",t=o.voiceId||\"eve\",i=o.language||\"auto\";const c=require(\"axios\");let d={text:e,voice_id:t,language:i,output_format:{codec:\"mp3\",sample_rate:24e3,bit_rate:128e3}};return new Promise((e,a)=>{c.post(\"https://api.x.ai/v1/tts\",d,{headers:{Authorization:`Bearer ${n}`,\"Content-Type\":\"application/json\"},responseType:\"arraybuffer\"}).then(a=>{console.log(a),e(a.data)}).catch(e=>{console.log(e),a(\"\")})})},getTTSVoice=async e=>{const a=[{voiceId:\"eve\",name:\"Eve\",gender:\"female\"},{voiceId:\"ara\",name:\"Ara\",gender:\"female\"},{voiceId:\"rex\",name:\"Rex\",gender:\"male\"},{voiceId:\"sal\",name:\"Sal\",gender:\"male\"},{voiceId:\"leo\",name:\"Leo\",gender:\"male\"}],o=[{code:\"en\",name:\"English\"},{code:\"ar-EG\",name:\"Arabic (Egypt)\"},{code:\"ar-SA\",name:\"Arabic (Saudi Arabia)\"},{code:\"ar-AE\",name:\"Arabic (UAE)\"},{code:\"bn\",name:\"Bengali\"},{code:\"zh\",name:\"Chinese (Simplified)\"},{code:\"fr\",name:\"French\"},{code:\"de\",name:\"German\"},{code:\"hi\",name:\"Hindi\"},{code:\"id\",name:\"Indonesian\"},{code:\"it\",name:\"Italian\"},{code:\"ja\",name:\"Japanese\"},{code:\"ko\",name:\"Korean\"},{code:\"pt-BR\",name:\"Portuguese (Brazil)\"},{code:\"pt-PT\",name:\"Portuguese (Portugal)\"},{code:\"ru\",name:\"Russian\"},{code:\"es-MX\",name:\"Spanish (Mexico)\"},{code:\"es-ES\",name:\"Spanish (Spain)\"},{code:\"tr\",name:\"Turkish\"},{code:\"vi\",name:\"Vietnamese\"}],n=[];for(const t of a)for(const a of o)n.push({name:t.voiceId,gender:t.gender,locale:a.code,displayName:`xAI TTS - ${t.name} (${a.name})`,plugin:\"xai-tts-voice-plugin\",config:{...e,voiceId:t.voiceId,language:a.code}});return n};global.getAudioPath=getAudioPath,global.getTTSVoice=getTTSVoice;"
+}

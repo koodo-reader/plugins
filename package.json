@@ -18,6 +18,7 @@
     "ws": "^8.18.0"
   },
   "devDependencies": {
+    "terser": "^5.46.2",
     "uglify-js": "^3.19.3"
   }
 }
