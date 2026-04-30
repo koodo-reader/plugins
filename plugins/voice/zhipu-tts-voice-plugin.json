@@ -1,0 +1,13 @@
+{
+  "identifier": "zhipu-tts-voice-plugin",
+  "type": "voice",
+  "displayName": "Zhipu TTS",
+  "icon": "speaker",
+  "version": "1.0.0",
+  "config": {
+    "apiKey": ""
+  },
+  "voiceList": [],
+  "scriptSHA256": "aedc44bf8207d594114b82569345d928c21cd38d26a67d9c754569561d910756",
+  "script": "const getAudioPath=async(e,a,o,n)=>{let i=require(\"path\"),l=require(\"fs\"),t=new Date().getTime()+\".wav\";l.existsSync(i.join(o,\"tts\"))||l.mkdirSync(i.join(o,\"tts\"));let m=await getTTSAudio(e,a,n);return l.writeFileSync(i.join(o,\"tts\",t),m),i.join(o,\"tts\",t)},getTTSAudio=async(e,a,o)=>{let n=o.apiKey||\"\",i=o.voiceName||\"tongtong\",l=require(\"axios\"),t={model:\"glm-tts\",input:e,voice:i,response_format:\"wav\",speed:a||1};return new Promise((e,a)=>{l.post(\"https:\/\/open.bigmodel.cn\/api\/paas\/v4\/audio\/speech\",t,{headers:{Authorization:`Bearer ${n}`,\"Content-Type\":\"application\/json\"},responseType:\"arraybuffer\"}).then(a=>{console.log(a),e(Buffer.from(a.data))}).catch(e=>{console.log(e),a(\"\")})})},getTTSVoice=async e=>{let a=[{name:\"tongtong\",gender:\"female\",locale:\"zh-CN\",displayName:\"\u5F64\u5F64 tongtong (zh-CN) - Female\"},{name:\"chuichui\",gender:\"male\",locale:\"zh-CN\",displayName:\"\u9524\u9524 chuichui (zh-CN) - Male\"},{name:\"xiaochen\",gender:\"male\",locale:\"zh-CN\",displayName:\"\u5C0F\u9648 xiaochen (zh-CN) - Male\"},{name:\"jam\",gender:\"male\",locale:\"zh-CN\",displayName:\"jam (zh-CN) - Male\"},{name:\"kazi\",gender:\"female\",locale:\"zh-CN\",displayName:\"kazi (zh-CN) - Female\"},{name:\"douji\",gender:\"male\",locale:\"zh-CN\",displayName:\"douji (zh-CN) - Male\"},{name:\"luodo\",gender:\"male\",locale:\"zh-CN\",displayName:\"luodo (zh-CN) - Male\"},];return a.map(a=>({name:a.name,gender:a.gender,locale:a.locale,displayName:`Zhipu TTS - ${a.displayName}`,plugin:\"zhipu-tts-voice-plugin\",config:{...e,voiceName:a.name}}))};global.getAudioPath=getAudioPath,global.getTTSVoice=getTTSVoice;"
+}

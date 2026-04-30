@@ -1,0 +1,13 @@
+{
+  "identifier": "mimo-tts-voice-plugin",
+  "type": "voice",
+  "displayName": "MiMo TTS",
+  "icon": "speaker",
+  "version": "1.0.0",
+  "config": {
+    "apiKey": ""
+  },
+  "voiceList": [],
+  "scriptSHA256": "2f1d87b2f4b7fe52e0cd41e8adbd63b3d38bf458159f4d5360585f5105f752ea",
+  "script": "const getAudioPath=async(e,a,l,i)=>{let o=require(\"path\"),t=require(\"fs\"),n=new Date().getTime()+\".wav\";return t.existsSync(o.join(l,\"tts\"))?(t.writeFileSync(o.join(l,\"tts\",n),await getTTSAudio(e,a,i)),console.log(\"folder already exists\")):(t.mkdirSync(o.join(l,\"tts\")),t.writeFileSync(o.join(l,\"tts\",n),await getTTSAudio(e,a,i)),console.log(\"folder created successfully\")),o.join(l,\"tts\",n)},getTTSAudio=async(e,a,l)=>{let i=l.apiKey||\"\",o=l.voiceName||\"mimo_default\",t=\"https:\/\/api.xiaomimimo.com\/v1\/chat\/completions\",n=require(\"axios\");return new Promise((a,l)=>{n.post(t,{model:\"mimo-v2.5-tts\",messages:[{role:\"assistant\",content:e},],audio:{format:\"mp3\",voice:o}},{headers:{\"api-key\":i,\"Content-Type\":\"application\/json\"}}).then(e=>{console.log(e);let l=e.data.choices[0].message.audio.data;a(Buffer.from(l,\"base64\"))}).catch(e=>{console.log(e),l(\"\")})})},getTTSVoice=async e=>{let a=[{name:\"mimo_default\",displayName:\"MiMo Default\",gender:\"female\",locale:\"zh-CN\"},{name:\"\u51B0\u7CD6\",displayName:\"\u51B0\u7CD6 (Bingtang) - Female\",gender:\"female\",locale:\"zh-CN\"},{name:\"\u8309\u8389\",displayName:\"\u8309\u8389 (Moli) - Female\",gender:\"female\",locale:\"zh-CN\"},{name:\"\u82CF\u6253\",displayName:\"\u82CF\u6253 (Suda) - Male\",gender:\"male\",locale:\"zh-CN\"},{name:\"\u767D\u6866\",displayName:\"\u767D\u6866 (Baihua)- Male\",gender:\"male\",locale:\"zh-CN\"},{name:\"Mia\",displayName:\"Mia - Female\",gender:\"female\",locale:\"en-US\"},{name:\"Chloe\",displayName:\"Chloe - Female\",gender:\"female\",locale:\"en-US\"},{name:\"Milo\",displayName:\"Milo - Male\",gender:\"male\",locale:\"en-US\"},{name:\"Dean\",displayName:\"Dean - Male\",gender:\"male\",locale:\"en-US\"},];return Promise.resolve(a.map(a=>({name:a.name,gender:a.gender,locale:a.locale,displayName:`MiMo TTS - ${a.displayName} (${a.locale})`,plugin:\"mimo-tts-voice-plugin\",config:{...e,voiceName:a.name}})))};global.getAudioPath=getAudioPath,global.getTTSVoice=getTTSVoice;"
+}

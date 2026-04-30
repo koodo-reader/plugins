@@ -5,7 +5,7 @@ const path = require("path");
 // 定义文件路径
 const filePath = path.join(
   __dirname,
-  "../plugins/voice/xai-tts-voice-plugin.json",
+  "../plugins/voice/mimo-tts-voice-plugin.json",
 );
 
 try {
