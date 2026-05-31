@@ -90,8 +90,8 @@ const getTTSVoice = async (config) => {
         name: voice.voiceId,
         gender: voice.gender,
         locale: lang.code,
-        displayName: `xAI TTS - ${voice.name} (${lang.name})`,
-        plugin: "xai-tts-voice-plugin",
+        displayName: `Grok TTS - ${voice.name} (${lang.name})`,
+        plugin: "grok-tts-voice-plugin",
         config: {
           ...config,
           voiceId: voice.voiceId,
