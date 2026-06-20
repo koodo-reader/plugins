@@ -81,7 +81,6 @@
     "lt": "Lithuanian",
     "lug": "Ganda",
     "lv": "Latvian",
-    "lzh": "Chinese (Literary)",
     "mai": "Maithili",
     "mg": "Malagasy",
     "mi": "Māori",
@@ -148,6 +147,7 @@
     "yue": "Cantonese (Traditional)",
     "zh-Hans": "Chinese Simplified",
     "zh-Hant": "Chinese Traditional",
+    "lzh": "Chinese (Literary)",
     "zu": "Zulu"
   },
   "scriptSHA256": "01abb8c72c72726aac6909def7667b8e2ec035e3d5455cd938a09bd309032f79",
