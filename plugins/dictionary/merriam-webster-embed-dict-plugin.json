@@ -1,0 +1,13 @@
+{
+  "identifier": "merriam-webster-embed-dict-plugin",
+  "type": "dictionary",
+  "displayName": "Merriam-Webster Dictionary",
+  "icon": "dict",
+  "version": "1.0.0",
+  "config": {},
+  "langList": [
+    { "lang": "english", "code": "english", "nativeLang": "English" }
+  ],
+  "scriptSHA256": "bbc76e2e6ff353fb32278eb4c8f2169a83397c8891a85bb03b5045d0553a66c6",
+  "script": "async function getDictText(t,c,e,i,n,g){return`https://www.merriam-webster.com/dictionary/${encodeURIComponent(t)}`}window.getDictText=getDictText;"
+}
