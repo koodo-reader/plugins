@@ -24,7 +24,7 @@ const getTTSAudio = async (text, speed, config) => {
   let voiceName = config.voiceName || "English_expressive_narrator";
   // speed range: 0.5 ~ 2.0, default 1.0
   let speedValue = speed ? Math.min(2.0, Math.max(0.5, speed)) : 1.0;
-  let url = "https://api.minimax.io/v1/t2a_v2";
+  let url = config.baseUrl + "/v1/t2a_v2";
   const axios = require("axios");
   return new Promise((resolve, reject) => {
     axios
@@ -143,7 +143,7 @@ const getGenderFromVoiceId = (voiceId, voiceName) => {
 };
 const getTTSVoice = async (config) => {
   let apiKey = config.apiKey || "";
-  let url = "https://api.minimax.io/v1/get_voice";
+  let url = config.baseUrl + "/v1/get_voice";
   const axios = require("axios");
   return new Promise((resolve, reject) => {
     axios
